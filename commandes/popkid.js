@@ -44,7 +44,7 @@ zokou({
     'nom': "PRESENCE",
     'choix': ["1", "2", "3"]
   }];
-  let _0x54dce5 = " ╭──────────────────☢\n POPKID 𝐌𝐝 \n ╰──────────────────☢\n\n";
+  let _0x54dce5 = " ╭──────────────────☢\n SAMMY 𝐌𝐝 \n ╰──────────────────☢\n\n";
   for (v = 0; v < _0x3e4f2b.length; v++) {
     _0x54dce5 += v + 1 + "- *" + _0x3e4f2b[v].nom + "*\n";
   }
@@ -66,7 +66,7 @@ zokou({
     nom: _0x445a3c,
     choix: _0x14fe3a
   } = _0x3e4f2b[_0x2057c1];
-  let _0x1995c4 = " ╭──────────────────☢\n POPKID var\n ╰──────────────────☢\n\n";
+  let _0x1995c4 = " ╭──────────────────☢\n SAMMY var\n ╰──────────────────☢\n\n";
   _0x1995c4 += "*Variable Name* :" + _0x445a3c + "\n";
   _0x1995c4 += "*Description* :" + getDescriptionFromEnv(_0x445a3c) + "\n\n";
   _0x1995c4 += "┌─────────────────☢\n\n";
