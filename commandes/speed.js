@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "speed", reaction: "🏎️", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'POPKID-MD 𝐍𝐞𝐞𝐝 𝐍𝐨 𝐬𝐩𝐞𝐞𝐝 𝐭𝐞𝐬𝐭𝐬';
+    let z = 'sammy-MD 𝐍𝐞𝐞𝐝 𝐍𝐨 𝐬𝐩𝐞𝐞𝐝 𝐭𝐞𝐬𝐭𝐬';
     let d = '𝐁𝐞𝐜𝐚𝐮𝐬𝐞 𝐈 𝐚𝐦 𝐓𝐡𝐞 𝐅𝐚𝐬𝐭𝐞𝐬𝐭 𝐁𝐨𝐭 𝐞𝐯𝐞𝐫 𝐌𝐚𝐝𝐞.';
     let varmess = z + d;
     var img = 'https://i.ibb.co/BNvstq2/IMG-20240916-WA0016.jpg';
