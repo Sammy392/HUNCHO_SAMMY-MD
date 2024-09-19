@@ -35,10 +35,10 @@ const date = moment().format('DD/MM/YYYY');
 ┃๏│▸ 𝗗𝗮𝘁𝗲  : *${date}* 
 ┃๏│▸ 𝗥𝗮𝗺 : 𝟲𝟴/𝟭𝟯𝟮 𝗚𝗕
 ┃๏│▸ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
-┃๏│▸ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : POPKID🌟
+┃๏│▸ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : SAMMY🌟
 ┃๏└───────────···▸
 ╰──────────────┈⊷\n${readmore}`;
-    let menuMsg = `POPKID MD PLUGINS
+    let menuMsg = `SAMMY MD PLUGINS
 `;
     for (const cat in coms) {
         menuMsg += `
@@ -55,7 +55,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰────────────┈⊷`
     }
     menuMsg += `
-> POPKID 𝐌𝐃\n
+> SAMMY 𝐌𝐃\n
 `;
    var lien = mybotpic();
    if (lien.match(/\.(mp4|gif)$/i)) {
