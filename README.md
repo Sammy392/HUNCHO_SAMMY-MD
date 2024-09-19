@@ -83,8 +83,8 @@
     <td>𝚠𝚊 𝚌𝚑𝚊𝚗𝚗𝚎𝚕</td>
   </tr>
   <tr>
-    <td><a href="https://wa.link/e9lbut"><img src="https://i.ibb.co/BNvstq2/IMG-20240916-WA0016.jpg" width="180"</td>
-    <td><a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x"><img src="https://i.ibb.co/kJYQ1PV/IMG-20240916-WA0017.jpg" width="180"</td>
+    <td><a href="https://wa.link/e9lbut"><img src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg" width="180"</td>
+    <td><a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x"><img src="https://i.ibb.co/Mydm4Wx/IMG-20240919-WA0119.jpg" width="180"</td>
   </tr>
 </table>
 
@@ -96,8 +96,8 @@
     <td>𝚃𝚒𝚔 𝚝𝚘𝚔</td>
   </tr>
   <tr>
-    <td><a href="https://youtube.com/@joeltech255?si=rqhYlAhFtqK7CVX2"><img src="https://i.ibb.co/kJYQ1PV/IMG-20240916-WA0017.jpg" width="180"</td>
-    <td><a href="https://www.tiktok.com/@joeljamestech"><img src="https://i.ibb.co/BNvstq2/IMG-20240916-WA0016.jpg" width="180"</td>
+    <td><a href="https://youtube.com/@joeltech255?si=rqhYlAhFtqK7CVX2"><img src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg" width="180"</td>
+    <td><a href="https://www.tiktok.com/@joeljamestech"><img src="https://i.ibb.co/Mydm4Wx/IMG-20240919-WA0119.jpg" width="180"</td>
   </tr>
 </table>
 
