@@ -19,7 +19,7 @@ zokou({ nomCom: 'quote', categorie: 'Group' }, async (dest, zk, commandeOptions)
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by *popkid*`);
+Powered by *sammy*`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
@@ -31,13 +31,13 @@ Powered by *popkid*`);
       fetch('https://animechan.xyz/api/random/character?name=' + query)
         .then((response) => response.json())
         .then(async (quote) => {
-          repondre(`popkid-MD
+          repondre(`sammy-MD
 
 🎬 Anime: ${quote.anime}
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by *popkid*`);
+Powered by *sammy*`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
