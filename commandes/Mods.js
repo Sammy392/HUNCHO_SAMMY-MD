@@ -17,7 +17,7 @@ const sleep =  (ms) =>{
     const { ms, repondre, arg, nomAuteurMessage, superUser } = commandeOptions;
   
     if (!superUser) {
-      repondre('Only popkid can use this command'); return;
+      repondre('Only sammy can use this command'); return;
     }
     //const apikey = conf.APILOLHUMAIN
   
@@ -47,7 +47,7 @@ const sleep =  (ms) =>{
         type = 'not animated sticker'
       }
   
-      let msg = `   popkid-stickers-dl
+      let msg = `   sammy-stickers-dl
       
   *Name :* ${stickers.data.result.name}
   *Type :* ${type} 
@@ -70,7 +70,7 @@ const sleep =  (ms) =>{
   
           const sticker = new Sticker(buffer.data, {
             pack: nomAuteurMessage,
-            author: "Bugatti",
+            author: "sammy",
             type: StickerTypes.FULL,
             categories: ['🤩', '🎉'],
             id: '12345',
