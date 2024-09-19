@@ -1,9 +1,9 @@
 {
-"name":"POPKID MD",
+"name":"SAMMY MD",
   "description":"𝑻𝒉𝒆 𝑭𝒂𝒔𝒕𝒆𝒔𝒕 𝑩𝒐𝒕",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.ibb.co/BNvstq2/IMG-20240916-WA0016.jpg",
-  "repository":"https://github.com/Popkid-md/TRIPPY",
+  "repository":"https://github.com/Sammy392/HUNCHO_SAMMY-MD",
   "succes_url":"/",
   "stack":"container",
   "env":{
@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"POPKID MD",
+      "value":"SAMMY MD",
       "required":false
 
     } ,
@@ -74,7 +74,7 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "POPKID "
+    "value": "SAMMY "
   },
     "NUMERO_OWNER":
   {
