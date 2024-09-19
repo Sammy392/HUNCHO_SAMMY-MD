@@ -61,7 +61,7 @@ zokou({
       }
 
       const senderId = msg.key.participant.split('@')[0];
-      const caption = `𝑫𝒆𝒍𝒆𝒕𝒆𝒅 𝑩𝒖𝒕 popkid 𝑪𝒂𝒏 𝒔𝒆𝒆\nMessage de @${senderId}`;
+      const caption = `𝑫𝒆𝒍𝒆𝒕𝒆𝒅 𝑩𝒖𝒕 sammy 𝑪𝒂𝒏 𝒔𝒆𝒆\nMessage de @${senderId}`;
       const imageCaption = { image: { url: './media/deleted-message.jpg' }, caption, mentions: [msg.key.participant] };
 
       await zk.sendMessage(idBot, imageCaption);
