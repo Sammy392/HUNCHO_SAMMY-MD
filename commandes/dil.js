@@ -114,7 +114,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'facebook video downloader powered by *POPKID-𝗧𝗘𝗖𝗛*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'facebook video downloader powered by *SAMMY-𝗧𝗘𝗖𝗛*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
