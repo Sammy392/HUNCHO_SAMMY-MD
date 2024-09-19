@@ -28,7 +28,7 @@ zokou({ nomCom: 'uptime',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_POPKID-MD UPTIME  IS: ${runtime(process.uptime())}_*`) 
+                 await repondre(`*_SAMMY-MD UPTIME  IS: ${runtime(process.uptime())}_*`) 
 
    
 
