@@ -36,7 +36,7 @@ zokou({
         // Prepare the message with song details
         const infoMess = {
           image: { url: videos[0].thumbnail },
-          caption: `*popkid-MD SONG PLAYER*\n
+          caption: `*sammy-MD SONG PLAYER*\n
 ╭───────────────◆
 │✍️ *Title:* ${apiResult.result.title}
 │😈 *Quality:* ${apiResult.result.type}
@@ -102,7 +102,7 @@ zokou({
         // Prepare the message with song details
         const infoMess = {
           image: { url: videos[0].thumbnail },
-          caption: `*POPKID-MD SONG PLAYER*\n
+          caption: `*SAMMY-MD SONG PLAYER*\n
 ╭───────────────◆
 │🏦 *Title:* ${apiResult.result.title}
 │🏦 *Quality:* ${apiResult.result.type}
@@ -169,7 +169,7 @@ zokou({
         // Prepare the message with video details
         const infoMess = {
           image: { url: videos[0].thumbnail },
-          caption: `*POPKID-MD VIDEO PLAYER*\n
+          caption: `*SAMMY-MD VIDEO PLAYER*\n
 ╭───────────────◆
 │❣️ *Title:* ${apiResult.result.title}
 │♥️ *Quality:* ${apiResult.result.type}
@@ -235,7 +235,7 @@ zokou({
         // Prepare the message with video details
         const infoMess = {
           image: { url: videos[0].thumbnail },
-          caption: `*POPKID-MD VIDEO PLAYER*\n
+          caption: `*SAMMY-MD VIDEO PLAYER*\n
 ╭───────────────◆
 │⿻ *Title:* ${apiResult.result.title}
 │⿻ *Quality:* ${apiResult.result.type}
