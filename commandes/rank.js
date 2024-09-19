@@ -134,14 +134,14 @@ zokou( {
     
     
          let msg = `
-┏━━━┛ POPKID 𝐌𝐃 ┗━━━┓         
+┏━━━┛ SAMMY 𝐌𝐃 ┗━━━┓         
     *Name :* @${auteurMsgRepondu.split("@")[0]}    
     *Level :* ${data.level}    
     *EXP :* ${data.exp}/${data.xplimit}
     *Role :* ${role}
     *Messages :* ${rank.messages}
     
-   ┕━✿━┑ POPKID 𝐌𝐃 ┍━✿━┙`
+   ┕━✿━┑ SAMMY 𝐌𝐃 ┍━✿━┙`
     
      zk.sendMessage( 
         dest,
@@ -205,13 +205,13 @@ zokou( {
     
     
          let msg = `
-┏━━━┛ POPKID 𝐌𝐝 ┗━━━┓  
+┏━━━┛ SAMMY 𝐌𝐝 ┗━━━┓  
   *Name :* ${nomAuteurMessage}
   *Level :* ${data.level}
   *EXP :* ${data.exp}/${data.xplimit}
   *Role :* ${role}
   *Messages :* ${rang.messages}
-   ┕━✿━┑ POPKID 𝐌𝐝┍━✿━┙`
+   ┕━✿━┑ SAMMY 𝐌𝐝┍━✿━┙`
     
      zk.sendMessage( 
         dest,
@@ -240,7 +240,7 @@ zokou( {
     const {ms , mybotpic} = commandeOptions ;
 
 
-       let msg = `┏━━┛ POPKID 𝐌𝐃┗━━┓\n\n`
+       let msg = `┏━━┛ SAMMY 𝐌𝐃┗━━┓\n\n`
        
       let topRanks = await getBottom10Users() ;
         let mention = [] ;
