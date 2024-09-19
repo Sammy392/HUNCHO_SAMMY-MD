@@ -1,12 +1,12 @@
 </h1> 
-<p align="center">POPKID MD V4.0.0
+<p align="center">SAMMY MD V4.0.0
  
- <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=POPKID MD BOT +WHATSAPP; MULTI+SERVICE+REVOLUTIONIZES;CREATE+BY+POPKID+TECH;BOT DATED+06.6.2024" alt="Typing SVG" /></a>
- <a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l">
- <img alt="POPKIDS BUG BOT" height="300" src="https://i.ibb.co/BNvstq2/IMG-20240916-WA0016.jpg">
+ <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=SAMMY MD BOT +WHATSAPP; MULTI+SERVICE+REVOLUTIONIZES;CREATE+BY+SAMMY+TECH;BOT DATED+06.6.2024" alt="Typing SVG" /></a>
+ <a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x">
+ <img alt="SAMMY BUG BOT" height="300" src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg">
   
 </h1> 
-<p align="center">𝚒𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚒𝚗𝚐<b> POPKID MD </b>, 𝚊 𝚙𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚠𝚊 𝚋𝚘𝚝 </p>
+<p align="center">𝚒𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚒𝚗𝚐<b> SAMMY MD </b>, 𝚊 𝚙𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚠𝚊 𝚋𝚘𝚝 </p>
 
 
   <div align="center">
@@ -26,7 +26,7 @@
 
 
 
-  **HOW TO DEPLOY POPKID MD V𝟒**
+  **HOW TO DEPLOY SAMMY MD V𝟒**
 
  
 
@@ -34,7 +34,7 @@
   **𝟏. 𝐅𝐈𝐑𝐒𝐓 𝐒𝐓𝐄𝐏**
 
 
-<a href="https://github.com/Popkid-md/TRIPPY/fork"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/FORK THIS REPO-h?color=red&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
+<a href="https://github.com/Sammy392/HUNCHO_SAMMY-MD/fork"><img title="Tap Here Open Session Site" src="https://img.shields.io/badge/FORK THIS REPO-h?color=red&style=for-the-badge&logo=msi" width="100" height="38.45"/></a></p>
 
 **star✨ my repo if you like this bot🤖**
 
@@ -59,12 +59,12 @@
 
 
 <a
-      href='https://dashboard.heroku.com/new?template=https://github.com/Popkid-md/TRIPPY/tree/main' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-purple?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+      href='https://dashboard.heroku.com/new?template=https://github.com/Sammy392/HUNCHO_SAMMY-MD/tree/main' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-purple?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 </a></p>
 - <br>
-<a href='https://popkid-new-sessions.onrender.com' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Get-Session_ID-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=blue'/></a>
+<a href='https://huncho-md-sessions-generator-1.onrender.com' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Get-Session_ID-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=blue'/></a>
 
 
 
@@ -79,12 +79,12 @@
 
 <table>
   <tr>
-    <td>POPKID TECH</td>
+    <td>SAMMY TECH</td>
     <td>𝚠𝚊 𝚌𝚑𝚊𝚗𝚗𝚎𝚕</td>
   </tr>
   <tr>
     <td><a href="https://wa.link/e9lbut"><img src="https://i.ibb.co/BNvstq2/IMG-20240916-WA0016.jpg" width="180"</td>
-    <td><a href="https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l"><img src="https://i.ibb.co/kJYQ1PV/IMG-20240916-WA0017.jpg" width="180"</td>
+    <td><a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x"><img src="https://i.ibb.co/kJYQ1PV/IMG-20240916-WA0017.jpg" width="180"</td>
   </tr>
 </table>
 
