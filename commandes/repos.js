@@ -31,11 +31,11 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "🔎", nomFichier: __
 ││ *𝐅𝐨𝐫𝐤𝐬:* ${repoInfo.forks}
 ││ *𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞:* ${releaseDate}
 ││ *𝐔𝐩𝐝𝐚𝐭𝐞𝐝: ${repoInfo.lastUpdate}
-││ *𝐎𝐰𝐧𝐞𝐫:* POPKID
-││ *𝐂𝐡𝐚𝐧𝐧𝐞𝐥:* https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
-││ *𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌:* https://www.instagram.com/Pop_kid254
+││ *𝐎𝐰𝐧𝐞𝐫:* SAMMY
+││ *𝐂𝐡𝐚𝐧𝐧𝐞𝐥:* https://github.com/Sammy392/HUNCHO_SAMMY-MD
+││ *𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌:* https://www.instagram.com/__huncho._sammy19?igsh=YzljYTk1ODg3Zg==
 ╰─────────༻༻༻────────
-          *POPKID 𝐌𝐃*`;
+          *SAMMY 𝐌𝐃*`;
 
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {
