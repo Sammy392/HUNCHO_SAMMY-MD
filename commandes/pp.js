@@ -4,7 +4,7 @@ const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "getpp", reaction: "📷", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
     let z = 'here  \n\n ' + "is profile picture ";
-    let d = 'Profile By POPKID-Md';
+    let d = 'Profile By sammy-Md';
     let varmess = z + d;
     var img = 'img = await zk.profilePictureUrl(auteurMsgRepondu, 'image'); }';
     await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
