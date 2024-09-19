@@ -4,10 +4,10 @@ const { zokou } = require("../framework/zokou");
 
 zokou({ nomCom: "channel", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Salut je m\'appelle *POPKID 𝐌𝐃* \n\n ' + 'je suis un bot Whatsapp Multi-appareil voici la chaîne';
-    let d = ' developpé par *POPKID  𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝒊𝒕☆*';
+    let z = 'Salut je m\'appelle *SAMMY 𝐌𝐃* \n\n ' + 'je suis un bot Whatsapp Multi-appareil voici la chaîne';
+    let d = ' developpé par *sammy  𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝒊𝒕☆*';
     let varmess = z + d;
-    var lien = 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l';  // Remplacez cet URL par le lien que vous souhaitez envoyer
+    var lien = 'https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x';  // Remplacez cet URL par le lien que vous souhaitez envoyer
     await zk.sendMessage(dest, { text: varmess + "\n" + lien });
 });
 
