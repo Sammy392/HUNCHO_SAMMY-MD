@@ -9,7 +9,7 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-zokou({ nomCom: "bugatti", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "sammy", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -38,19 +38,19 @@ const date = moment().format('DD/MM/YYYY');
 *𝐇𝐞𝐲 𝐘𝐨𝐮?* 
 *𝐅𝐨𝐫 𝐮𝐩𝐝𝐚𝐭𝐞𝐬 𝐅𝐨𝐥𝐥𝐨𝐰;*
 *Whatsapp channel*
-> https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
->https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l
+> https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x
+>https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x
 
 *Youtube*
 > https://www.youtube.com/wemacomic
 
 *For more info*
-> https://github.com/Popkid-md/TRIPPY
->https://github.com/Popkid-md/TRIPPY
+> https://github.com/Sammy392/HUNCHO_SAMMY-MD
+>https://github.com/Sammy392/HUNCHO_SAMMY-MD
   `;
     
 let menuMsg = `
-> ©POPKID 𝐌𝐝
+> ©SAMMY 𝐌𝐝
 `;
 
    var lien = mybotpic();
