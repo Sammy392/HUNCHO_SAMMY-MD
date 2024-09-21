@@ -3,7 +3,7 @@
  
  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=SAMMY MD BOT +WHATSAPP; MULTI+SERVICE+REVOLUTIONIZES;CREATE+BY+SAMMY+TECH;BOT DATED+06.6.2024" alt="Typing SVG" /></a>
  <a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x">
- <img alt="SAMMY BUG BOT" height="300" src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg">
+ <img alt="SAMMY BUG BOT" height="300" src="https://i.ibb.co/bW27g4d/IMG-20240921-WA0096.jpg">
   
 </h1> 
 <p align="center">𝚒𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚒𝚗𝚐<b> SAMMY MD </b>, 𝚊 𝚙𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚠𝚊 𝚋𝚘𝚝 </p>
