@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"SAMMY MD",
+      "value":"HUNCHO MD",
       "required":false
 
     } ,
@@ -74,7 +74,7 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "SAMMY "
+    "value": "HUNCHO "
   },
     "NUMERO_OWNER":
   {
