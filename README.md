@@ -96,7 +96,7 @@
     <td>𝚃𝚒𝚔 𝚝𝚘𝚔</td>
   </tr>
   <tr>
-    <td><a href="https://youtube.com/@joeltech255?si=rqhYlAhFtqK7CVX2"><img src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg" width="180"</td>
+    <td><a href="https://www.youtube.com/@sammir_41r20"><img src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg" width="180"</td>
     <td><a href="https://www.tiktok.com/@joeljamestech"><img src="https://i.ibb.co/Mydm4Wx/IMG-20240919-WA0119.jpg" width="180"</td>
   </tr>
 </table>
@@ -107,7 +107,7 @@
 
  *HUNCHO MD BEST WHATSAPP BOT*
 
-
+.I'm on Instagram as @__huncho._sammy19. Install the app to follow my photos and videos. https://www.instagram.com/__huncho._sammy19?igsh=YzljYTk1ODg3Zg==
 
 
 
@@ -115,5 +115,12 @@
 
 *𝙽𝚘𝚝𝚎* :*huncho 𝚖𝚍 𝚒𝚜 𝚜𝚊𝚏𝚎 𝚘𝚗 𝚑𝚎𝚛𝚘𝚔𝚞 𝚌𝚘𝚗𝚝𝚊𝚌𝚝 𝚘𝚠𝚗𝚎𝚛 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚒𝚗𝚏𝚘*
 
-+254769569210
++254769569210 {HUNCHO}
+Hello _huncho 🤍💎 
+The recent Group link for [] BOT TESTING [] -and- []  VCF FILE []✅ is here. 
 
+
+Group link:https://chat.whatsapp.com/L5M61Ofwr5t7KhoZYguVuZ
+
+
+> CLICK HERE TO JOIN 👇
