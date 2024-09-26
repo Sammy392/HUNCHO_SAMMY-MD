@@ -83,7 +83,7 @@
     <td>𝚠𝚊 𝚌𝚑𝚊𝚗𝚗𝚎𝚕</td>
   </tr>
   <tr>
-    <td><a href="https://wa.link/e9lbut"><img src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg" width="180"</td>
+    <td><a href="https://wa.link/6dukvg"><img src="https://i.ibb.co/tqbWVK7/IMG-20240919-WA0118.jpg" width="180"</td>
     <td><a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x"><img src="https://i.ibb.co/Mydm4Wx/IMG-20240919-WA0119.jpg" width="180"</td>
   </tr>
 </table>
