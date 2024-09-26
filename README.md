@@ -120,7 +120,7 @@ Hello _huncho 🤍💎
 The recent Group link for [] BOT TESTING [] -and- []  VCF FILE []✅ is here. 
 
 
-Group link:https://chat.whatsapp.com/L5M61Ofwr5t7KhoZYguVuZ
+Group link:https://chat.whatsapp.com/JwFWmNUzOYD1HUf8jxYtwi
 
 
-> CLICK HERE TO JOIN 👇
+> CLICK HERE TO JOIN ✅☝☝
