@@ -1,6 +1,6 @@
 </h1> 
 <p align="center">HUNCHO MD V4.0.0
- 
+https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x 
  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HUNCHO MD BOT +WHATSAPP; MULTI+SERVICE+REVOLUTIONIZES;CREATE+BY+HUNCHO+TECH;BOT DATED+06.6.2024" alt="Typing SVG" /></a>
  <a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x">
  <img alt="SAMMY BUG BOT" height="300" src="https://i.ibb.co/bW27g4d/IMG-20240921-WA0096.jpg">
