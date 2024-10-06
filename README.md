@@ -1,6 +1,6 @@
 </h1> 
 <p align="center">HUNCHO MD V4.0.0
-https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x 
+ 
  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HUNCHO MD BOT +WHATSAPP; MULTI+SERVICE+REVOLUTIONIZES;CREATE+BY+HUNCHO+TECH;BOT DATED+06.6.2024" alt="Typing SVG" /></a>
  <a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x">
  <img alt="SAMMY BUG BOT" height="300" src="https://i.ibb.co/bW27g4d/IMG-20240921-WA0096.jpg">
@@ -107,7 +107,9 @@ Survival is winning frankline everything else is bullshit,fairy tales spun by pe
 
  *HUNCHO MD BEST WHATSAPP BOT*
 
-.I'm on Instagram as @__huncho._sammy19. Install the app to follow my photos and videos. https://www.instagram.com/__huncho._sammy19?igsh=YzljYTk1ODg3Zg==
+.I'm on Instagram as @__huncho._sammy19. 
+
+https://www.instagram.com/__huncho._sammy19?igsh=YzljYTk1ODg3Zg==
 
 
 
@@ -115,12 +117,11 @@ Survival is winning frankline everything else is bullshit,fairy tales spun by pe
 
 *𝙽𝚘𝚝𝚎* :*huncho 𝚖𝚍 𝚒𝚜 𝚜𝚊𝚏𝚎 𝚘𝚗 𝚑𝚎𝚛𝚘𝚔𝚞 𝚌𝚘𝚗𝚝𝚊𝚌𝚝 𝚘𝚠𝚗𝚎𝚛 𝚏𝚘𝚛 𝚖𝚘𝚛𝚎 𝚒𝚗𝚏𝚘*
 
-+254769569210 {HUNCHO}
-Hello _huncho 🤍💎 
-The recent Group link for [] BOT TESTING [] -and- []  VCF FILE []✅ is here. 
+HUncho @+254769569210
 
 
-Group link:https://chat.whatsapp.com/JwFWmNUzOYD1HUf8jxYtwi
+
+JOIN MY WHATSAPP GROUP https://chat.whatsapp.com/L5hIqYAiKGlFgEZHxD5Woo
 
 
-> CLICK HERE TO JOIN ✅☝☝
+
