@@ -23,7 +23,7 @@
   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
   
   ## MUST FOLLOW OUR OFFICIAL CHANNEL
-<a href="https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F" target="_blank">
+<a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x" target="_blank">
     <img alt="whatsapp Group" src="https://img.shields.io/badge/ Whatsapp Support Channel -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/>
@@ -72,7 +72,9 @@ The WhatsApp Bot HUNCHO✨✨❤️ is released under the [MIT License]
 - [**popkid254**](https://github.com/popkid-ke)
 
 
+JOIN WA GROUP: https://chat.whatsapp.com/L5hIqYAiKGlFgEZHxD5Woo
 
 
+Contact owner: https://wa.link/5upsz1
 
-©HUNCHO MD BOT BY HUNCHO✨✨❤️
+©WEST HAM MD BOT BY HUNCHO✨✨❤️
