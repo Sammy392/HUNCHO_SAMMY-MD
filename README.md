@@ -3,7 +3,7 @@
  
  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HUNCHO MD BOT +WHATSAPP; MULTI+SERVICE+REVOLUTIONIZES;CREATE+BY+HUNCHO+TECH;BOT DATED+06.6.2024" alt="Typing SVG" /></a>
  <a href="https://whatsapp.com/channel/0029Vap3LMf2ZjChWb6lLh3x">
- <img alt="SAMMY BUG BOT" height="300" src="<a href="https://i.ibb.co/VLWqGgF/Screenshot-20241013-181210.jpg">
+ <img alt="SAMMY BUG BOT" height="300" src="<a href="https://i.ibb.co/VLWqGgF/Screenshot-20241013-181210.jpg"
   
 </h1> 
 <p align="center">𝚒𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚒𝚗𝚐<b> HUNCHO MD </b>, 𝚊 𝚙𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚠𝚊 𝚋𝚘𝚝 </p>
