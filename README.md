@@ -1,7 +1,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-## HUNCHO-MD BY POPKID
+## WESTHAM-MD BY HUNCHO
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HUNCHO+MD+;A+WHATSAPP+BOT;CREATED+BY+HUNCHO+TECH" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=WESTHAM+MD+;A+WHATSAPP+BOT;CREATED+BY+HUNCHO+TECH" alt="Typing SVG" /></a>
   </p>
 <div align="center">
 
@@ -9,7 +9,7 @@
 |----|
 
 <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=POPKID-MD+100%+Is+Safe+on+Heroku" alt="">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=WESTHAM-MD+100%+Is+Safe+on+Heroku" alt="">
 </p>
 <p align="center">
 <a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-HUNCHO TECH-red.svg?style=for-the-badge&logo=github"></a>
@@ -66,7 +66,7 @@ Enjoy the diverse features of the WhatsApp Bot HUNCHO-MD✨❤️ to enhance you
 
 The WhatsApp Bot HUNCHO✨✨❤️ is released under the [MIT License]
 
-# HUNCHO MD Developers:
+# WESTHAM MD Developers:
 
 - [**HUNCHO**](https://github.com/Sammy392)
 - [**popkid254**](https://github.com/popkid-ke)
