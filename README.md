@@ -1,7 +1,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-## POPKID-MD BY POPKID
+## HUNCHO-MD BY POPKID
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=POPKID+MD+;A+WHATSAPP+BOT;CREATED+BY+POPKID+TECH" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HUNCHO+MD+;A+WHATSAPP+BOT;CREATED+BY+HUNCHO+TECH" alt="Typing SVG" /></a>
   </p>
 <div align="center">
 
@@ -66,7 +66,7 @@ Enjoy the diverse features of the WhatsApp Bot HUNCHO-MD✨❤️ to enhance you
 
 The WhatsApp Bot HUNCHO✨✨❤️ is released under the [MIT License]
 
-# POPKID MD Developers:
+# HUNCHO MD Developers:
 
 - [**HUNCHO**](https://github.com/Sammy392)
 - [**popkid254**](https://github.com/popkid-ke)
