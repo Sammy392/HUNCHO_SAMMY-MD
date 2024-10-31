@@ -36,7 +36,7 @@ const date = moment().format('DD/MM/YYYY');
 ┃⊛│◆ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : SAMMY
 ┃⊛└───────────☆
 ╰──────────────☆\n${readmore}`;
-    let menuMsg = `SAMMY MD PLUGINS`;
+    let menuMsg = `WESTHAM MD PLUGINS`;
     for (const cat in coms) {
         menuMsg += `
 ╭──「 *${cat}* 」──✫ 
@@ -51,7 +51,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰────────────┈⊷`
     }
     menuMsg += `
-> SAMMY MD\n
+> WESTHAM MD\n
 `;
    var lien = mybotpic();
    if (lien.match(/\.(mp4|gif)$/i)) {
