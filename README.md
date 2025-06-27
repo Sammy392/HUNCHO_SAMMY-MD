@@ -5,8 +5,10 @@
   </p>
 <div align="center">
 
-| [![HUNCHO KE]
+HUNCHO MD
+
 <a href="https://ibb.co/FkSQ56ry"><img src="https://i.ibb.co/p6tHf27M/IMG-20250528-WA0071.jpg" alt="IMG-20250528-WA0071" border="0"></a>
+
 (https://github.com/Sammy392)|
 
 |----|
