@@ -1,7 +1,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 ## HUNCHO MD-MD BY HUNCHO
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Graffiti&weight=450&size=30&pause=1000&background=FF489A&center=true&height=40&lines=HUNCHO+MD+IS+A+POWERFUL;WHATSAPP+BOT+CREATED+BY;Huncho+Tech+254769569210" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=HUNCHO+MD+IS+A+POWERFUL;WHATSAPP+BOT+CREATED+BY;Huncho+Tech+254769569210" alt="Typing SVG" /></a>
   </p>
 <div align="center">
 
