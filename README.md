@@ -69,10 +69,10 @@ The WhatsApp Bot HUNCHO✨✨❤️ is released under the [MIT License]
 # WESTHAM MD Developers:
 
 - [**HUNCHO**](https://github.com/Sammy392)
-- [**popkid254**](https://github.com/popkid-ke)
 
 
-JOIN WA GROUP: https://chat.whatsapp.com/L5hIqYAiKGlFgEZHxD5Woo
+
+JOIN WA GROUP:(https://chat.whatsapp.com/DU4e3BPkPI5ICFxXDwxikh)
 
 
 Contact owner: https://wa.link/5upsz1
