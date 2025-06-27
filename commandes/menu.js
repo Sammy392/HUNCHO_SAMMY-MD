@@ -33,10 +33,10 @@ const date = moment().format('DD/MM/YYYY');
 ┃⊛│◆ 𝗥𝗮𝗺  : 𝟴/𝟭𝟯𝟮 𝗚𝗕
 ┃⊛│◆ 𝗗𝗮𝘁𝗲  : *${date}* 
 ┃⊛│◆ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
-┃⊛│◆ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : SAMMY
+┃⊛│◆ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : HUNCHO ⚡
 ┃⊛└───────────☆
 ╰──────────────☆\n${readmore}`;
-    let menuMsg = `WESTHAM MD PLUGINS`;
+    let menuMsg = `HUNCHO MD PLUGINS`;
     for (const cat in coms) {
         menuMsg += `
 ╭──「 *${cat}* 」──✫ 
@@ -51,7 +51,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰────────────┈⊷`
     }
     menuMsg += `
-> WESTHAM MD\n
+> HUNCHO MD\n
 `;
    var lien = mybotpic();
    if (lien.match(/\.(mp4|gif)$/i)) {
