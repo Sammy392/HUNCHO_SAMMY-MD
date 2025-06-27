@@ -71,7 +71,7 @@ Enjoy the diverse features of the WhatsApp Bot HUNCHO-MD✨❤️ to enhance you
 
 The WhatsApp Bot HUNCHO✨✨❤️ is released under the [MIT License]
 
-# WESTHAM MD Developers:
+# HUNCHO MD Developers:
 
 - [**HUNCHO**](https://github.com/Sammy392)
 
