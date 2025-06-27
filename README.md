@@ -1,11 +1,13 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-## WESTHAM-MD BY HUNCHO
+## HUNCHO MD-MD BY HUNCHO
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=WESTHAM+MD+;A+WHATSAPP+BOT;CREATED+BY+HUNCHO+TECH" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines= HUNCHO+MD+;A+WHATSAPP+BOT;CREATED+BY+HUNCHO+TECH;WHATSAPP+254769569210" alt="Typing SVG" /></a>
   </p>
 <div align="center">
 
-| [![HUNCHO KE](https://i.ibb.co/VLWqGgF/Screenshot-20241013-181210.jpg?lenght=50width=50)](https://github.com/Sammy392)|
+| [![HUNCHO KE](https://ibb.co/FkSQ56ry)]
+(https://github.com/Sammy392)|
+
 |----|
 
 <p align="center">
