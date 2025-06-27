@@ -64,6 +64,9 @@ HUNCHO MD
 2. Now Deploy
     <br>
 <a href='https://dashboard.heroku.com/new?template=https://github.com/Sammy392/HUNCHO_SAMMY-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+<img title="DEPLOY ON RENDER" src="https://img.shields.io/badge/🚀_DEPLOY_ON_RENDER-000000?style=for-the-badge&logo=render&logoColor=white&color=61DAFB" width="260" height="50"/>
+
+
 
 Enjoy the diverse features of the WhatsApp Bot HUNCHO-MD✨❤️ to enhance your conversations and make your WhatsApp experience more interesting!
 
