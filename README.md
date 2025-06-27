@@ -46,7 +46,7 @@ HUNCHO MD
 
 2. Get session id by (PAIRING CODE)
     <br>
-<a href='https://popsessionns-471d272266c7.herokuapp.com/pair' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id_2-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=green'/></a>
+<a href='https://www.ibrahimadams.site/scanner' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id_2-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=green'/></a>
 
 
 
