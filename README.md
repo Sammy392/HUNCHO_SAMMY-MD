@@ -14,7 +14,7 @@ HUNCHO MD
 |----|
 
 <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=WESTHAM-MD+100%+Is+Safe+on+Heroku" alt="">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FFE45E&width=435&lines=HUNCHO+MD+is+100%25+safe+on+heroku!;Deploy+NOW+and+ENJOY" alt="Typing SVG" /></a>
 </p>
 <p align="center">
 <a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-HUNCHO TECH-red.svg?style=for-the-badge&logo=github"></a>
