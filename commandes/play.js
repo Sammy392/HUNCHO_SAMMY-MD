@@ -6,7 +6,7 @@ const giftedapikey = 'giftedtechk';
 zokou({
   nomCom: "play",
   categorie: "Download",
-  reaction: "💿"
+  reaction: "💎"
 }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
 
@@ -169,7 +169,7 @@ zokou({
         // Prepare the message with video details
         const infoMess = {
           image: { url: videos[0].thumbnail },
-          caption: `*SAMMY-MD VIDEO PLAYER*\n
+          caption: `*HUNCHO-MD VIDEO PLAYER*\n
 ╭───────────────◆
 │❣️ *Title:* ${apiResult.result.title}
 │♥️ *Quality:* ${apiResult.result.type}
