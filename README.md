@@ -1,0 +1,1 @@
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Pacifico&pause=1000&color=275BFF&width=435&lines=Welcome+To+Huncho+Tech;HUNCHO-XMD+a+powerful+WhatsApp+Bot+;Created+by+Huncho+254769569210" alt="Typing SVG" /></a>
