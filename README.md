@@ -26,6 +26,6 @@
 
 ### FORK MY REPO.💎
 
-<a href="https://github.com/your-username/your-repo/fork">
+<a href="https://github.com/Sammy392/HUNCHO_SAMMY-MD/fork">
   <img title="FORK THIS REPO" src="https://img.shields.io/badge/FORK%20THIS%20REPO-black?color=black&style=for-the-badge&logo=github&logoColor=white" width="240" height="38.45"/>
 </a>
