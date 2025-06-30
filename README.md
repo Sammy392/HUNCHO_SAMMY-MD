@@ -36,3 +36,10 @@
 <a href="https://hunchosession.onrender.com/pair">
   <img title="GET SESSION ID" src="https://img.shields.io/badge/GET%20SESSION%20ID-pink?color=pink&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/>
 </a>
+
+
+##           DEPLOYMENT METHODS
+#### 1. HEROKU 
+<a href="https://signup.heroku.com/">
+  <img title="SIGN UP ON HEROKU" src="https://img.shields.io/badge/SIGN%20UP%20ON%20HEROKU-430098?color=430098&style=for-the-badge&logo=heroku&logoColor=white" width="240" height="38.45"/>
+</a>
