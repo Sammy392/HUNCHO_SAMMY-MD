@@ -43,3 +43,10 @@
 <a href="https://signup.heroku.com/">
   <img title="SIGN UP ON HEROKU" src="https://img.shields.io/badge/SIGN%20UP%20ON%20HEROKU-430098?color=430098&style=for-the-badge&logo=heroku&logoColor=white" width="240" height="38.45"/>
 </a>
+
+#### DEPLOY NOW.⚡ 
+
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Sammy392/HUNCHO_SAMMY-MD">
+  <img title="DEPLOY HUNCHO XMD BOT" src="https://img.shields.io/badge/DEPLOY%20HUNCHO%20XMD%20BOT-430098?color=430098&style=for-the-badge&logo=heroku&logoColor=white" width="240" height="38.45"/>
+</a>
+
