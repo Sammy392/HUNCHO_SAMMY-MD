@@ -50,3 +50,8 @@
   <img title="DEPLOY HUNCHO XMD BOT" src="https://img.shields.io/badge/DEPLOY%20HUNCHO%20XMD%20BOT-430098?color=430098&style=for-the-badge&logo=heroku&logoColor=white" width="240" height="38.45"/>
 </a>
 
+
+### ©HUNCHO TECH 
+
+
+Trust God's timing. Keep working hard while you wait for what you prayed for.
