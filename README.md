@@ -15,3 +15,10 @@
 <a href="https://whatsapp.com/channel/0029Vb61XuIKgsNt6yv9Sc2y">
   <img title="JOIN WHATSAPP CHANNEL" src="https://img.shields.io/badge/JOIN%20WHATSAPP%20CHANNEL-green?color=25D366&style=for-the-badge&logo=whatsapp&logoColor=white" width="240" height="38.45"/>
 </a>
+
+
+### CONTACT THE OWNER.🤩
+
+<a href="https://wa.me/254769569210">
+  <img title="CONTACT OWNER" src="https://img.shields.io/badge/CONTACT%20OWNER-green?color=25D366&style=for-the-badge&logo=whatsapp&logoColor=white" width="240" height="38.45"/>
+</a>
