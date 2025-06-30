@@ -3,3 +3,5 @@
  -•*On this day 7th JUNE 2023*••
  
  <a href="https://ibb.co/Z6s1Zthr"><img src="https://i.ibb.co/8D34hTjw/IMG-20250528-WA0072.jpg" alt="IMG-20250528-WA0072" border="0"></a>
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Dancing+script&pause=1000&color=FF6547&width=435&lines=HUNCHO+MD+IS+100%25+SAFE+ON+HEROKU;Deploy+now+%26+ENJOY" alt="Typing SVG" /></a>
