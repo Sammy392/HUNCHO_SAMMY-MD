@@ -29,3 +29,10 @@
 <a href="https://github.com/Sammy392/HUNCHO_SAMMY-MD/fork">
   <img title="FORK THIS REPO" src="https://img.shields.io/badge/FORK%20THIS%20REPO-black?color=black&style=for-the-badge&logo=github&logoColor=white" width="240" height="38.45"/>
 </a>
+
+
+### GET YOUR SESSION ID.🤪
+
+<a href="https://hunchosession.onrender.com/pair">
+  <img title="GET SESSION ID" src="https://img.shields.io/badge/GET%20SESSION%20ID-pink?color=pink&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/>
+</a>
