@@ -22,3 +22,10 @@
 <a href="https://wa.me/254769569210">
   <img title="CONTACT OWNER" src="https://img.shields.io/badge/CONTACT%20OWNER-green?color=25D366&style=for-the-badge&logo=whatsapp&logoColor=white" width="240" height="38.45"/>
 </a>
+
+
+### FORK MY REPO.💎
+
+<a href="https://github.com/your-username/your-repo/fork">
+  <img title="FORK THIS REPO" src="https://img.shields.io/badge/FORK%20THIS%20REPO-black?color=black&style=for-the-badge&logo=github&logoColor=white" width="240" height="38.45"/>
+</a>
