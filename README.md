@@ -47,7 +47,7 @@
 #### DEPLOY NOW.⚡ 
 
 <a href="https://dashboard.heroku.com/new?template=https://github.com/Sammy392/HUNCHO_SAMMY-MD">
-  <img title="DEPLOY HUNCHO XMD BOT" src="https://img.shields.io/badge/DEPLOY%20HUNCHO%20XMD%20BOT-430098?color=430098&style=for-the-badge&logo=heroku&logoColor=white" width="240" height="38.45"/>
+  <img title="DEPLOY HUNCHO XMD BOT" src="https://img.shields.io/badge/DEPLOY%20HUNCHO%20XMD%20BOT-430098?color=red&style=for-the-badge&logo=heroku&logoColor=white" width="240" height="38.45"/>
 </a>
 
 #### RENDER HOSTING.⚡ 
