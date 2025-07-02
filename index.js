@@ -159,8 +159,8 @@ async function start() {
                         externalAdReply: {
                             title: "ʜᴜɴᴄʜᴏ xᴍᴅ ʙᴏᴛ",
                             body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʜᴜɴᴄʜᴏ",
-                            thumbnailUrl: 'https://files.catbox.moe/nk71o3.jpg',
-                            sourceUrl: 'https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31',
+                            thumbnailUrl: 'https://files.catbox.moe/1q2vcp.png',
+                            sourceUrl: 'https://whatsapp.com/channel/0029Vb61XuIKgsNt6yv9Sc2y',
                             mediaType: 1,
                             renderLargerThumbnail: false,
                         },
