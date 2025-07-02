@@ -58,7 +58,7 @@ const bible = async (m, sock) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: 'POPKID BIBLE 🔔',
+          newsletterName: 'huncho BIBLE 🔔',
           newsletterJid: '120363290715861418@newsletter'
         }
       }
@@ -72,7 +72,7 @@ const bible = async (m, sock) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: 'POPKID BIBLE 🔔',
+          newsletterName: 'huncho BIBLE 🔔',
           newsletterJid: '120363290715861418@newsletter'
         }
       }
@@ -94,7 +94,7 @@ const bible = async (m, sock) => {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterName: 'POPKID BIBLE ❌',
+            newsletterName: 'huncho BIBLE ❌',
             newsletterJid: '120363420342566562@newsletter'
           }
         }
@@ -126,7 +126,7 @@ const bible = async (m, sock) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: 'POPKID BIBLE 📖',
+          newsletterName: 'huncho BIBLE 📖',
           newsletterJid: '120363420342566562@newsletter'
         }
       }
