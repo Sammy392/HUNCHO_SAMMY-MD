@@ -1,122 +1,111 @@
-import { UploadFileUgu, TelegraPh } from '../uploader.js';
-import { writeFile, unlink } from 'fs/promises';
-import config from '../../config.cjs';
-const MAX_FILE_SIZE_MB = 60;
+import fetch from 'node-fetch';
+import FormData from 'form-data';
+import { fileTypeFromBuffer } from 'file-type';
 
-const tourl = async (m, gss) => {
-  const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
-  const validCommands = ['tourl', 'url'];
+const MAX_FILE_SIZE_MB = 200;
 
-  if (validCommands.includes(cmd)) {
-    if (!m.quoted || !['imageMessage', 'videoMessage', 'audioMessage'].includes(m.quoted.mtype)) {
-      return m.reply(`Send/Reply with an image, video, or audio to upload ${prefix + cmd}`);
+async function uploadMedia(buffer) {
+  try {
+    const { ext } = await fileTypeFromBuffer(buffer);
+    const form = new FormData();
+    form.append('fileToUpload', buffer, `file.${ext}`);
+    form.append('reqtype', 'fileupload');
+
+    const response = await fetch('https://catbox.moe/user/api.php', {
+      method: 'POST',
+      body: form,
+    });
+
+    if (!response.ok) throw new Error(`Upload failed: ${response.statusText}`);
+    return await response.text();
+  } catch (error) {
+    console.error('Upload error:', error);
+    throw new Error('❌ Upload failed. Try again later.');
+  }
+}
+
+function getMediaType(mtype) {
+  switch (mtype) {
+    case 'imageMessage': return 'image';
+    case 'videoMessage': return 'video';
+    case 'audioMessage': return 'audio';
+    default: return null;
+  }
+}
+
+const tourl = async (m, bot) => {
+  const validCommands = ['url', 'geturl', 'upload', 'u'];
+  const prefixMatch = m.body?.trim().match(/^([\\/!#.\-])(\w+)/);
+  if (!prefixMatch) return;
+
+  const cmd = prefixMatch[2].toLowerCase();
+  if (!validCommands.includes(cmd)) return;
+
+  if (
+    !m.quoted ||
+    !['imageMessage', 'videoMessage', 'audioMessage'].includes(m.quoted.mtype)
+  ) {
+    return m.reply(
+      `💀 *Invalid Input!*\nReply to an image, video, or audio.\n\n📥 Usage:\n\`${prefixMatch[1]}${cmd}\``
+    );
+  }
+
+  try {
+    const media = await m.quoted.download();
+    if (!media) throw new Error('Media download failed.');
+
+    const fileSizeMB = media.length / (1024 * 1024);
+    if (fileSizeMB > MAX_FILE_SIZE_MB) {
+      return m.reply(
+        `⛔ *Upload Blocked!*\nFile size > ${MAX_FILE_SIZE_MB}MB`
+      );
     }
 
-    try {
-      const loadingMessages = [
-        "*「▰▰▰▱▱▱▱▱▱▱」*",
-        "*「▰▰▰▰▱▱▱▱▱▱」*",
-        "*「▰▰▰▰▰▱▱▱▱▱」*",
-        "*「▰▰▰▰▰▰▱▱▱▱」*",
-        "*「▰▰▰▰▰▰▰▱▱▱」*",
-        "*「▰▰▰▰▰▰▰▰▱▱」*",
-        "*「▰▰▰▰▰▰▰▰▰▱」*",
-        "*「▰▰▰▰▰▰▰▰▰▰」*",
-      ];
+    const mediaUrl = await uploadMedia(media);
+    const mediaType = getMediaType(m.quoted.mtype);
+    const mediaTypeName =
+      mediaType.charAt(0).toUpperCase() + mediaType.slice(1);
 
-      const loadingMessageCount = loadingMessages.length;
-      let currentMessageIndex = 0;
+    const contextInfo = {
+      forwardingScore: 100,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+        newsletterName: "HunchoMd-HAX",
+        newsletterJid: "120363420342566562@newsletter",
+      },
+    };
 
-      const { key } = await gss.sendMessage(m.from, { text: loadingMessages[currentMessageIndex] }, { quoted: m });
+    const caption = `
+🟩──[ 💀 HUNCHO4PERPEH HACKTOOL ]──🟩
+📁 TYPE   : ${mediaTypeName}
+🌍 LINK   : ${mediaUrl}
+👤 USER   : ${m.pushName || "Anonymous"}
+⏱️ TIME   : ${new Date().toLocaleString('en-GB')}
+✅ STATUS : SUCCESS
+🟩──────────────🟩
+🔗 Huncho XMD Hacker Network
+`.trim();
 
-      const loadingInterval = setInterval(() => {
-        currentMessageIndex = (currentMessageIndex + 1) % loadingMessageCount;
-        gss.relayMessage(m.from, {
-          protocolMessage: {
-            key: key,
-            type: 14,
-            editedMessage: {
-              conversation: loadingMessages[currentMessageIndex],
-            },
-          },
-        }, {});
-      }, 500);
-
-      const media = await m.quoted.download(); // Download the media from the quoted message
-      if (!media) throw new Error('Failed to download media.');
-
-      const fileSizeMB = media.length / (1024 * 1024); // Calculate file size in megabytes
-      if (fileSizeMB > MAX_FILE_SIZE_MB) {
-        clearInterval(loadingInterval);
-        return m.reply(`File size exceeds the limit of ${MAX_FILE_SIZE_MB}MB.`);
-      }
-
-      const extension = getFileExtension(m.quoted.mtype);
-      if (!extension) throw new Error('Unknown media type.');
-
-      const filePath = `./${Date.now()}.${extension}`; // Save the media with proper extension
-      await writeFile(filePath, media);
-
-      let response;
-      if (m.quoted.mtype === 'imageMessage') {
-        response = await TelegraPh(filePath); // Pass the file path to TelegraPh
-      } else {
-        response = await UploadFileUgu(filePath); // Pass the file path to UploadFileUgu
-      }
-
-      clearInterval(loadingInterval);
-
-      // Replace loading animation with "Loading complete" message
-      await gss.relayMessage(m.from, {
-        protocolMessage: {
-          key: key,
-          type: 14,
-          editedMessage: {
-            conversation: '✅ Loading complete.',
-          },
+    if (mediaType === 'audio') {
+      await bot.sendMessage(
+        m.from,
+        { text: caption, contextInfo },
+        { quoted: m }
+      );
+    } else {
+      await bot.sendMessage(
+        m.from,
+        {
+          [mediaType]: { url: mediaUrl },
+          caption,
+          contextInfo,
         },
-      }, {});
-
-      const mediaUrl = response.url || response; // Extract the URL from the response
-
-      // Only send the URL as a reply
-      await m.reply(`*Hey ${m.pushName} Here Is Your Media*\n*url:* ${mediaUrl}`);
-
-      await unlink(filePath); // Delete the downloaded media file
-    } catch (error) {
-      console.error('Error processing media:', error);
-      m.reply('Error processing media.');
+        { quoted: m }
+      );
     }
-  }
-};
-
-// Function to get the file extension based on media type
-const getFileExtension = (mtype) => {
-  switch (mtype) {
-    case 'imageMessage':
-      return 'jpg';
-    case 'videoMessage':
-      return 'mp4';
-    case 'audioMessage':
-      return 'mp3';
-    default:
-      return null;
-  }
-};
-
-// Function to get the media type for messaging
-const getMediaType = (mtype) => {
-  switch (mtype) {
-    case 'imageMessage':
-      return 'image';
-    case 'videoMessage':
-      return 'video';
-    case 'audioMessage':
-      return 'audio';
-    default:
-      return null;
+  } catch (err) {
+    console.error('Upload error:', err);
+    return m.reply(`🚨 *SYSTEM ERROR:*\nTry again later.`);
   }
 };
 
