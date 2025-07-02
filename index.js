@@ -140,7 +140,7 @@ async function start() {
                 await updateBio(Matrix);
 
                 await Matrix.sendMessage(Matrix.user.id, {
-                    image: { url: "https://files.catbox.moe/nk71o3.jpg" },
+                    image: { url: "https://files.catbox.moe/1q2vcp.png" },
                     caption: `╭━━ *『 ʜᴜɴᴄʜᴏ xᴍᴅ ᴄᴏɴɴᴇᴄᴛᴇᴅ 』*
 ┃  |⚡| *ʙᴏᴛ:* ʜᴜɴᴄʜᴏ xᴍᴅ
 ┃  |👑| *ᴏᴡɴᴇʀ:* ʜᴜɴᴄʜᴏ
