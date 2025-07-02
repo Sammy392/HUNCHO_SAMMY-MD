@@ -16,7 +16,7 @@ const sessionGen = async (m, sock) => {
         forwardingScore: 5,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: "Popkid-Xmd",
+          newsletterName: "huncho",
           newsletterJid: "120363420342566562@newsletter",
         },
       },
@@ -37,7 +37,7 @@ const sessionGen = async (m, sock) => {
         forwardingScore: 5,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: "Popkid-Xmd",
+          newsletterName: "hunchomd",
           newsletterJid: "120363420342566562@newsletter",
         },
       },
@@ -50,7 +50,7 @@ const sessionGen = async (m, sock) => {
         forwardingScore: 5,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: "Popkid-Xmd",
+          newsletterName: "huncho",
           newsletterJid: "120363420342566562@newsletter",
         },
       },
