@@ -1,41 +1,61 @@
 import config from '../../config.cjs';
 
-const tagAll = async (m, gss) => {
-  try {
-    // Ensure the function is async
-    const botNumber = await gss.decodeJid(gss.user.id);
-    const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
-    
-    // Check for the valid command
-    const validCommands = ['tagall'];
-    if (!validCommands.includes(cmd)) return;
+const tagall = async (m, sock) => {
+  const prefix = config.PREFIX;
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 
-
-    const groupMetadata = await gss.groupMetadata(m.from);
-    const participants = groupMetadata.participants;
-    const botAdmin = participants.find(p => p.id === botNumber)?.admin;
-    const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
-    
-        if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
-
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
-    // Extract the message to be sent
-    let message = `乂 *Attention Everyone* 乂\n\n*Message:* ${m.body.slice(prefix.length + cmd.length).trim() || 'no message'}\n\n`;
-        
-
-
-    for (let participant of participants) {
-      message += `❒ @${participant.id.split('@')[0]}\n`;
+  if (cmd === "tagall") {
+    if (!m.isGroup) {
+      await sock.sendMessage(m.from, { text: '🚫 *This command can only be used in groups!*' }, { quoted: m });
+      return;
     }
 
-    await gss.sendMessage(m.from, { text: message, mentions: participants.map(a => a.id) }, { quoted: m });
-  } catch (error) {
-    console.error('Error:', error);
-    await m.reply('An error occurred while processing the command.');
+    try {
+      const groupMetadata = await sock.groupMetadata(m.from);
+      const participants = groupMetadata.participants;
+      const mentions = participants.map(({ id }) => id);
+
+      const groupName = groupMetadata.subject || "this group";
+      const participantCount = participants.length;
+
+      let message = `
+╭━━〔 👥 *TAGGING ALL MEMBERS* 〕━━⬣
+┃ 🔰 *Group:* ${groupName}
+┃ 📣 *Members:* ${participantCount}
+┃ ✨ *Requested by:* @${m.sender.split('@')[0]}
+┃
+┃ 🔖 *Mentions:*
+┃
+`.trim();
+
+      // Style individual mentions
+      for (let i = 0; i < participants.length; i++) {
+        const username = participants[i].id.split('@')[0];
+        message += `┃ 🔹 @${username}\n`;
+      }
+
+      message += `╰━━━〔 © HUNCHO-MD BOT 〕━━━⬣`;
+
+      await sock.sendMessage(
+        m.from,
+        {
+          text: message,
+          mentions: mentions
+        },
+        { quoted: m }
+      );
+
+    } catch (error) {
+      console.error("Error tagging all members:", error);
+      await sock.sendMessage(
+        m.from,
+        {
+          text: '⚠️ *Failed to tag members.* Make sure the bot has admin rights in this group.',
+        },
+        { quoted: m }
+      );
+    }
   }
 };
 
-export default tagAll;
+export default tagall;
