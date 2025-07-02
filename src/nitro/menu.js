@@ -34,6 +34,8 @@ const menu = async (m, sock) => {
 🟢 ${prefix}menu | 📜
 🟢 ${prefix}alive | ✅
 🟢 ${prefix}owner | 👑
+🟢 ${prefix}repo 
+🟢 ${prefix}git 
 
  *OWNER COMMANDS* ❣️
 🟩 ${prefix}join | 🔗
@@ -46,6 +48,13 @@ const menu = async (m, sock) => {
 🟩 ${prefix}anticall | 🚫
 🟩 ${prefix}setstatus | 🛑
 🟩 ${prefix}setnamebot | 📝
+🟩 ${prefix}pair |🥳
+🟩 ${prefix}link |😫
+🟩 ${prefix}mode |🙂
+🟩 ${prefix}alwaysonline 
+🟩 ${prefix}autorecording 
+🟩 ${prefix}autotyping 
+🟩 ${prefix}autoreact 
 
  *GPT / AI FEATURES* 💎
 💎 ${prefix}ai | 🤖
@@ -60,6 +69,9 @@ const menu = async (m, sock) => {
 🤭 ${prefix}gimage | 🖼️
 🤭 ${prefix}play | 🎧
 🤭 ${prefix}video | 📹
+🤭 ${prefix}url  |🚸
+🤭 ${prefix}ytmp3 |🛄
+🤭 ${prefix}apk |🚳
 
  *SEARCH UTILITIES* 🤩
 🧐 ${prefix}google | 🌐
@@ -73,7 +85,49 @@ const menu = async (m, sock) => {
  *FUN ZONE* 🏴
 👉 ${prefix}getpp | 🖼️
 👉 ${prefix}url | 🔗
+👉 ${prefix}fancy
+👉 ${prefix}randompic 
+👉 ${prefix}riddle
+👉 ${prefix}question
+👉 ${prefix}hack
+👉 ${prefix}quotes
+👉 ${prefix}truth
+👉 ${prefix}dare 
+👉 ${prefix}facts
 
+ *GROUP MENU* 🗿
+ ⚡ ${prefix}invite
+ ⚡ ${prefix}add
+ ⚡ ${prefix}remove
+ ⚡ ${prefix}tagall 
+ ⚡ ${prefix}hidetag 
+ ⚡ ${prefix}promote 
+ ⚡ ${prefix}kickall 
+ ⚡ ${prefix}demote
+ ⚡ ${prefix}opengroup
+ ⚡ ${prefix}close group 
+ ⚡ ${prefix}ginfo
+ ⚡ ${prefix}tagadmin 
+ ⚡ ${prefix}resetlink 
+ ⚡ ${prefix}poll 
+ ⚡ ${prefix}countries
+ ⚡ ${prefix}vcf 
+ ⚡ ${prefix}setgpp 
+ ⚡ ${prefix}online 
+
+ *CONVERSATION MENU* 🎮
+ ❣️ ${prefix}vv 
+ ❣️ ${prefix}sticker 
+ ❣️ ${prefix}save 
+ ❣️ ${prefix}ping 
+ ❣️ ${prefix}slow 
+ ❣️ ${prefix}tovideo 
+ ❣️ ${prefix}toimage 
+ ❣️ ${prefix}sent
+ ❣️ ${prefix}4d
+ ❣️ ${prefix}3d 
+ ❣️ ${prefix}hacker 
+ ❣️ ${prefix}huncho
 ──────────────
 🤍 *Enjoy & Explore!*   🤍
 📌 _Bot by Huncho_
