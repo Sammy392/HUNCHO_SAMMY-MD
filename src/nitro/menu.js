@@ -24,58 +24,58 @@ const menu = async (m, sock) => {
 ║ 👾 *𝗛𝗨𝗡𝗖𝗛𝗢 𝗠𝗗 𝗕𝗢𝗧* 👾
 ║ 💡 *Version:* 7.1.0
 ║ 🧠 *Developer:* Huncho🪆
-║ ⚡ *Speed:* Ultra Fast
+║ ⚡ *Speed:* Ultra Fast 
 ╚═══════════════✦
 
 ✨ *𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗠𝗘𝗡𝗨* ✨
 > Maximize your experience by using the commands below.
 
-📁 *SYSTEM MENU*
-• ${prefix}menu | 📜
-• ${prefix}alive | ✅
-• ${prefix}owner | 👑
+ *SYSTEM MENU* 🤪
+🟢 ${prefix}menu | 📜
+🟢 ${prefix}alive | ✅
+🟢 ${prefix}owner | 👑
 
-🛠️ *OWNER COMMANDS*
-• ${prefix}join | 🔗
-• ${prefix}leave | 🚪
-• ${prefix}autobio | 🩷
-• ${prefix}block | 🔒
-• ${prefix}unblock | 🔓
-• ${prefix}autolikestatus | 🧋
-• ${prefix}setppbot | 🤖
-• ${prefix}anticall | 🚫
-• ${prefix}setstatus | 🛑
-• ${prefix}setnamebot | 📝
+ *OWNER COMMANDS* ❣️
+🟩 ${prefix}join | 🔗
+🟩 ${prefix}leave | 🚪
+🟩 ${prefix}autobio | 🩷
+🟩 ${prefix}block | 🔒
+🟩 ${prefix}unblock | 🔓
+🟩 ${prefix}autolikestatus | 🧋
+🟩 ${prefix}setppbot | 🤖
+🟩 ${prefix}anticall | 🚫
+🟩 ${prefix}setstatus | 🛑
+🟩 ${prefix}setnamebot | 📝
 
-🧠 *GPT / AI FEATURES*
-• ${prefix}ai | 🤖
-• ${prefix}gpt | 🧠
-• ${prefix}dalle | 🎨
-• ${prefix}bug | 🐞
-• ${prefix}report | 📢
-• ${prefix}chatbot | 🗣️
+ *GPT / AI FEATURES* 💎
+💎 ${prefix}ai | 🤖
+💎 ${prefix}gpt | 🧠
+💎 ${prefix}dalle | 🎨
+💎 ${prefix}bug | 🐞
+💎 ${prefix}report | 📢
+💎 ${prefix}chatbot | 🗣️
 
-📦 *CONVERTER TOOLS*
-• ${prefix}attp | 🔤
-• ${prefix}gimage | 🖼️
-• ${prefix}play | 🎧
-• ${prefix}video | 📹
+ *CONVERTER TOOLS* ⚠️
+🤭 ${prefix}attp | 🔤
+🤭 ${prefix}gimage | 🖼️
+🤭 ${prefix}play | 🎧
+🤭 ${prefix}video | 📹
 
-🔍 *SEARCH UTILITIES*
-• ${prefix}google | 🌐
-• ${prefix}mediafire | 📦
-• ${prefix}facebook | 📘
-• ${prefix}instagram | 📸
-• ${prefix}tiktok | 🎵
-• ${prefix}lyrics | 🎶
-• ${prefix}imdb | 🎬
+ *SEARCH UTILITIES* 🤩
+🧐 ${prefix}google | 🌐
+🧐 ${prefix}mediafire | 📦
+🧐 ${prefix}facebook | 📘
+🧐 ${prefix}instagram | 📸
+🧐 ${prefix}tiktok | 🎵
+🧐 ${prefix}lyrics | 🎶
+🧐 ${prefix}imdb | 🎬
 
-🎉 *FUN ZONE*
-• ${prefix}getpp | 🖼️
-• ${prefix}url | 🔗
+ *FUN ZONE* 🏴
+👉 ${prefix}getpp | 🖼️
+👉 ${prefix}url | 🔗
 
 ──────────────
-🛠️ *Enjoy & Explore!*  
+🤍 *Enjoy & Explore!*   🤍
 📌 _Bot by Huncho_
 ──────────────`;
 
