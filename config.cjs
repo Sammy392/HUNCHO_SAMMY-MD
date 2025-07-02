@@ -52,7 +52,11 @@ const config = {
 
   // API keys
   GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc",
-
+GPT_API_KEY: process.env.GPT_API_KEY || "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", // Groq key
+  GROQ_API_KEY: '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',
+  WEATHER_API_KEY: "ec32bfa1c6b8ff81a636877b6ba302c8",
+  GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc",
+  
   // Welcome feature
   WELCOME: process.env.WELCOME !== undefined ? process.env.WELCOME === 'true' : false,
 };
