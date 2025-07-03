@@ -1,54 +1,57 @@
 import fs from 'fs';
 import config from '../../config.cjs';
 
-const handleGreeting = async (m, gss) => {
+const handleGreeting = async (m, sock) => {
   try {
-    const textLower = m.body.toLowerCase();
+    const text = m.body.toLowerCase().trim();
 
     const triggerWords = [
       'send', 'statusdown', 'take', 'sent', 'giv', 'gib', 'upload',
       'send me', 'sent me', 'znt', 'snt', 'ayak', 'do', 'mee'
     ];
 
-    if (triggerWords.includes(textLower)) {
-      if (m.message && m.message.extendedTextMessage && m.message.extendedTextMessage.contextInfo) {
-        const quotedMessage = m.message.extendedTextMessage.contextInfo.quotedMessage;
+    if (!triggerWords.includes(text)) return;
 
-        if (quotedMessage) {
-          // Check if it's an image
-          if (quotedMessage.imageMessage) {
-            const imageCaption = quotedMessage.imageMessage.caption;
-            const imageUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
-            await gss.sendMessage(m.from, {
-              image: { url: imageUrl },
-              caption: imageCaption,
-              contextInfo: {
-                mentionedJid: [m.sender],
-                forwardingScore: 9999,
-                isForwarded: true,
-              },
-            });
-          }
+    const quotedMsg = m.message?.extendedTextMessage?.contextInfo?.quotedMessage;
 
-          // Check if it's a video
-          if (quotedMessage.videoMessage) {
-            const videoCaption = quotedMessage.videoMessage.caption;
-            const videoUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
-            await gss.sendMessage(m.from, {
-              video: { url: videoUrl },
-              caption: videoCaption,
-              contextInfo: {
-                mentionedJid: [m.sender],
-                forwardingScore: 9999,
-                isForwarded: true,
-              },
-            });
-          }
-        }
-      }
+    if (!quotedMsg) return;
+
+    const senderMention = [m.sender];
+    const contextInfo = {
+      mentionedJid: senderMention,
+      forwardingScore: 777,
+      isForwarded: true,
+      externalAdReply: {
+        title: 'HUNCHO XMD',
+        body: '🔥 Forwarded Media Utility',
+        thumbnailUrl: 'https://telegra.ph/file/4d838ab7ffb49f30c8e18.jpg',
+        mediaType: 1,
+        mediaUrl: 'https://github.com/Sammy392/HUNCHO_SAMMY-MD',
+        sourceUrl: 'https://github.com/Sammy392/HUNCHO_SAMMY-MD',
+        showAdAttribution: true,
+      },
+    };
+
+    const forwardMedia = async (mediaType, getUrl, caption = '') => {
+      const mediaPath = await sock.downloadAndSaveMediaMessage(getUrl);
+      await sock.sendMessage(m.from, {
+        [mediaType]: { url: mediaPath },
+        caption: `╭──⧉ *Media Resent*\n│👤 From: @${m.sender.split('@')[0]}\n│📎 Type: ${mediaType.toUpperCase()}\n╰─────────────⟡\n\n${caption || '_No caption_'}`,
+        contextInfo
+      }, { quoted: m });
+    };
+
+    if (quotedMsg.imageMessage) {
+      await forwardMedia('image', quotedMsg.imageMessage, quotedMsg.imageMessage.caption);
+    } else if (quotedMsg.videoMessage) {
+      await forwardMedia('video', quotedMsg.videoMessage, quotedMsg.videoMessage.caption);
     }
-  } catch (error) {
-    console.error('Error:', error);
+
+  } catch (err) {
+    console.error('[⚠️ handleGreeting Error]', err.message);
+    await sock.sendMessage(m.from, {
+      text: '❌ *Error while processing your request. Try again later.*',
+    }, { quoted: m });
   }
 };
 
