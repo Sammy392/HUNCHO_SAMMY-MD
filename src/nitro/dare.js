@@ -46,7 +46,7 @@ const dareCommand = async (m, sock) => {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterName: "💘 DareMeXmd",
-        newsletterJid:120363420342566562@newsletter",
+        0029Vb61XuIKgsNt6yv9Sc2y@newsletter",
       },
     },
   });
