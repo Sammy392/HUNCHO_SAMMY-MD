@@ -1,0 +1,244 @@
+const { franceking } = require('../main');
+const axios = require('axios');
+const fetch = require('node-fetch');
+const conf = require('../config');
+const translate = require('../france/Trt');
+
+module.exports = [
+  {
+    name: 'trt',
+    get flashOnly() {
+  return franceking();
+},
+    aliases: ['translate'],
+    description: 'Translate a replied message to the specified language.',
+    category: 'General',
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      const quoted = msg.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+
+      if (!quoted) {
+        return king.sendMessage(fromJid, {
+          text: 'Please reply to the message you want to translate.\nExample: trt fr'
+        }, { quoted: msg });
+      }
+
+      if (args.length !== 1) {
+        return king.sendMessage(fromJid, {
+          text: 'Please provide only the language code.\nExample: trt fr'
+        }, { quoted: msg });
+      }
+
+      const lang = args[0].toLowerCase();
+      const textToTranslate = quoted?.conversation || quoted?.extendedTextMessage?.text || '';
+
+      if (!textToTranslate) {
+        return king.sendMessage(fromJid, { text: 'The replied message does not contain text.' }, { quoted: msg });
+      }
+
+      try {
+        const translated = await translate(textToTranslate, { to: lang });
+        await king.sendMessage(fromJid, { text: translated }, { quoted: msg });
+      } catch (error) {
+        await king.sendMessage(fromJid, {
+          text: 'Translation failed. Please check the language code.'
+        }, { quoted: msg });
+      }
+    }
+  },
+  {
+    name: 'owner',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Sends contact card of the bot owner.',
+    category: 'General',
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      const vcard =
+        'BEGIN:VCARD\n' +
+        'VERSION:3.0\n' +
+        `FN:${conf.ON}\n` +
+        'ORG:undefined;\n' +
+        `TEL;type=CELL;type=VOICE;waid=${conf.NUMBER}:${conf.NUMBER}\n` +
+        'END:VCARD';
+
+      await king.sendMessage(fromJid, {
+        contacts: {
+          displayName: conf.ON,
+          contacts: [{ vcard }]
+        }
+      }, { quoted: msg });
+    }
+  },
+  {
+    name: 'ss',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Takes a screenshot of a website.',
+    category: 'General',
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      const url = args.join(' ');
+      if (!url) {
+        return king.sendMessage(fromJid, { text: 'Provide a link to screenshot.' }, { quoted: msg });
+      }
+
+      try {
+        const screenshotUrl = `https://api.diioffc.web.id/api/tools/sstab?url=${encodeURIComponent(url)}`;
+        const response = await axios.get(screenshotUrl, { responseType: 'arraybuffer' });
+
+        await king.sendMessage(fromJid, {
+          image: response.data,
+          caption: '*Huncho-MD WEB SCREENSHOT*'
+        }, { quoted: msg });
+      } catch (error) {
+        console.error('ssCommand error:', error);
+        await king.sendMessage(fromJid, { text: 'Failed to take website screenshot.' }, { quoted: msg });
+      }
+    }
+  },
+  {
+    name: 'bible',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Get a Bible verse from a specific book, chapter, and verse.',
+    category: 'General',
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      const verse = args.join(' ');
+
+      if (!verse) {
+        return king.sendMessage(fromJid, { text: 'Usage: bible john 3:16' }, { quoted: msg });
+      }
+
+      try {
+        const response = await fetch(`https://bible-api.com/${verse}`);
+        if (!response.ok) {
+          return king.sendMessage(fromJid, { text: 'Invalid reference. Try: bible john 3:16' }, { quoted: msg });
+        }
+
+        const data = await response.json();
+        const bibleText = `📖 *THE HOLY BIBLE*\n\n📜 ${data.reference}\n🔢 Verses: ${data.verses.length}\n📝 ${data.text}\n🌍 Language: ${data.translation_name}\n\n*Powered by FLASH-MD*`;
+
+        await king.sendMessage(fromJid, { text: bibleText }, { quoted: msg });
+      } catch (error) {
+        await king.sendMessage(fromJid, { text: 'Error fetching verse.' }, { quoted: msg });
+      }
+    }
+  },
+  {
+    name: 'poll',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Create a poll.',
+    category: 'General',
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      const input = args.join(' ');
+      const [question, optionsString] = input.split('/');
+      if (!question || !optionsString) {
+        return king.sendMessage(fromJid, { text: 'Usage: poll What is 2+2?/2,3,4' }, { quoted: msg });
+      }
+
+      const options = optionsString.split(',').map(opt => opt.trim());
+      await king.sendMessage(fromJid, {
+        poll: {
+          name: question.trim(),
+          values: options
+        }
+      }, { quoted: msg });
+    }
+  },
+  {
+    name: 'fact',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Get a random fact.',
+    category: 'User',
+    execute: async (king, msg) => {
+      const fromJid = msg.key.remoteJid;
+      const response = await fetch('https://nekos.life/api/v2/fact');
+      const data = await response.json();
+
+      await king.sendMessage(fromJid, {
+        text: `◆━━━━━━✦FACT✦━━━━━━◆\n◇ ${data.fact}\n◇ Powered by huncho King\n◇ KEEP USING huncho-md'
+      }, { quoted: msg });
+    }
+  },
+  {
+    name: 'quotes',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Get a random quote.',
+    category: 'User',
+    execute: async (king, msg) => {
+      const fromJid = msg.key.remoteJid;
+      const response = await fetch('https://favqs.com/api/qotd');
+      const data = await response.json();
+      const quote = data.quote;
+
+                                   const message = `◆━━━━━━✦QUOTE✦━━━━━━◆\n◇ "${quote.body}"\n◇ — ${quote.author}\n◇ Powered by Huncho King\n◇ KEEP USING huncho-md';
+
+      await king.sendMessage(fromJid, { text: message }, { quoted: msg });
+    }
+  },
+  {
+    name: 'define',
+    get flashOnly() {
+  return franceking();
+},
+    description: 'Get a definition for a term.',
+    category: 'Search',
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      if (!args.length) {
+        return king.sendMessage(fromJid, { text: 'Provide a term to define.' }, { quoted: msg });
+      }
+
+      const query = args.join(' ');
+      try {
+        const { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${query}`);
+        const def = data.list[0];
+        const text = `📚 Word: ${query}\n📝 Definition: ${def.definition.replace(/[]/g, '')}\n💡 Example: ${def.example.replace(/[]/g, '')}`;
+        return king.sendMessage(fromJid, { text }, { quoted: msg });
+      } catch {
+        return king.sendMessage(fromJid, { text: `No definition found for "${query}".` }, { quoted: msg });
+      }
+    }
+  },
+  {
+    name: 'eval',
+    get flashOnly() {
+  return franceking();
+},
+    aliases: ['evaluate'],
+    description: 'Evaluate JavaScript code (owner only).',
+    category: 'General',
+    ownerOnly: true,
+    execute: async (king, msg, args) => {
+      const fromJid = msg.key.remoteJid;
+      if (!args.length) {
+        return king.sendMessage(fromJid, { text: 'Provide code to evaluate. Example: >2+2' }, { quoted: msg });
+      }
+
+      const code = args.join(' ');
+      if (code.startsWith('>')) {
+        try {
+          let result = await eval(code.slice(1));
+          if (typeof result !== 'string') {
+            result = require('util').inspect(result);
+          }
+          await king.sendMessage(fromJid, { text: result }, { quoted: msg });
+        } catch (err) {
+          await king.sendMessage(fromJid, { text: `Error: ${err.message}` }, { quoted: msg });
+        }
+      }
+    }
+  }
+        ];
