@@ -14,7 +14,7 @@ const repo = async (m, sock) => {
 
     const repoText = `
 ╭───────────────⭓
-│  📦 *ᴘᴏᴘᴋɪᴅ-ɢʟᴇ ʙᴏᴛ ʀᴇᴘᴏ*
+│  📦 *HUNCHO MD REPO*
 ╰───────────────⭓
 ┌───────────◇
 │ 🔗 *GitHub Repo:*
