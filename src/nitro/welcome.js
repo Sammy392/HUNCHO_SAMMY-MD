@@ -2,37 +2,69 @@ import config from '../../config.cjs';
 
 const gcEvent = async (m, Matrix) => {
   const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+  const text = m.body.slice(prefix.length + cmd.length).trim();
 
   if (cmd === 'welcome') {
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
-    const groupMetadata = await Matrix.groupMetadata(m.from);
-    const participants = groupMetadata.participants;
-    const botNumber = await Matrix.decodeJid(Matrix.user.id);
-    const botAdmin = participants.find(p => p.id === botNumber)?.admin;
-    const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
+    if (!m.isGroup) return m.reply('🚫 *This command only works in group chats!*');
+    await m.reply('🧠 Processing your request...');
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
-    let responseMessage;
+    // Set image only once
+    let profilePic = 'https://i.ibb.co/fqvKZrP/ppdefault.jpg';
+    try {
+      profilePic = await Matrix.profilePictureUrl(m.chat, 'image');
+    } catch {}
 
+    // popkid
+    let menuText;
     if (text === 'on') {
       config.WELCOME = true;
-      responseMessage = "WELCOME & LEFT message has been enabled.";
+      menuText = `
+╭───〔 ✅ *WELCOME ENABLED* 〕───╮
+│ 🎉 Welcome system is now *ACTIVE*!
+│ 👋 Members joining will be greeted.
+│ 👋 Leaving members will be acknowledged.
+╰────────────────────────────╯`;
     } else if (text === 'off') {
       config.WELCOME = false;
-      responseMessage = "WELCOME & LEFT message has been disabled.";
+      menuText = `
+╭───〔 ❌ *WELCOME DISABLED* 〕───╮
+│ 🔇 Welcome messages are now *OFF*.
+│ 😶 No alerts for joins or leaves.
+╰────────────────────────────╯`;
     } else {
-      responseMessage = "Usage:\n- `WELCOME on`: Enable WELCOME & LEFT message\n- `WELCOME off`: Disable WELCOME & LEFT message";
+      menuText = `
+╭────〔 ⚙️ *WELCOME SYSTEM HELP* 〕────╮
+│
+│ ✅ \`${prefix}welcome on\` – Enable
+│ ❌ \`${prefix}welcome off\` – Disable
+│ 📌 Group Only Command
+│
+╰────────────────────────────────╯`;
     }
 
-    try {
-      await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
-    } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
-    }
+    // Send a single stylish message with image
+    await Matrix.sendMessage(m.from, {
+      image: { url: profilePic },
+      caption: menuText.trim(),
+      contextInfo: {
+        forwardingScore: 777,
+        isForwarded: true,
+        externalAdReply: {
+          title: "👑 Huncho-Xmd Bot",
+          body: "Welcome system updated successfully!",
+          thumbnailUrl: profilePic,
+          mediaType: 1,
+          renderLargerThumbnail: true,
+          showAdAttribution: true,
+          sourceUrl: "https://github.com/Sammy392/HUNCHO_SAMMY-MD"
+        },
+        forwardedNewsletterMessageInfo: {
+          newsletterName: "HUNCHO-TECH",
+          newsletterJid: "1203634203425662@newsletter",
+        },
+      }
+    }, { quoted: m });
   }
 };
 
