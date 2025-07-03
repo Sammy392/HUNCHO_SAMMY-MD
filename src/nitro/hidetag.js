@@ -26,8 +26,8 @@ const hidetag = async (m, gss) => {
 ┗━━━━━━━━━━━━━━┛`,
       contextInfo: {
         forwardedNewsletterMessageInfo: {
-          newsletterJid: "0029Vb61XuIKgsNt6yv9Sc2y@newsletter",
-          newsletterName: "Huncho-Xmd"
+          newsletterJid: "1203632907158618@newsletter",
+          newsletterName: "HUNCHO-XMD"
         }
       }
     });
@@ -38,8 +38,8 @@ const hidetag = async (m, gss) => {
     mentions: participants,
     contextInfo: {
       forwardedNewsletterMessageInfo: {
-        newsletterJid: "0029Vb61XuIKgsNt6yv9Sc2y@newsletter",
-        newsletterName: "Huncho-Xmd"
+        newsletterJid: "120363290715861418@newsletter",
+        newsletterName: "HUNCHO-XD"
       }
     }
   });
