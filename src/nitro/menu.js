@@ -72,6 +72,7 @@ const menu = async (m, sock) => {
 🤭 ${prefix}url  |🚸
 🤭 ${prefix}ytmp3 |🛄
 🤭 ${prefix}apk |🚳
+🤭 ${prefix}sticker |🔱
 
  *SEARCH UTILITIES* 🤩
 🧐 ${prefix}google | 🌐
@@ -128,10 +129,10 @@ const menu = async (m, sock) => {
  ❣️ ${prefix}3d 
  ❣️ ${prefix}hacker 
  ❣️ ${prefix}huncho
-──────────────
+∆∆∆────────────── ∆∆∆
 🤍 *Enjoy & Explore!*   🤍
 📌 _Bot by Huncho_
-──────────────`;
+∆∆∆──────────────∆∆∆`;
 
     await sock.sendMessage(m.from, {
       image: { url: profilePictureUrl },
@@ -141,7 +142,7 @@ const menu = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "Huncho-Xmd",
-          newsletterJid: "120363290715861418@newsletter",
+          newsletterJid: "0029Vb61XuIKgsNt6yv9Sc2y@newsletter",
         },
       }
     }, { quoted: m });
