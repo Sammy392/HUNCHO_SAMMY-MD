@@ -17,7 +17,7 @@ const sessionGen = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "huncho",
-          newsletterJid: "120363420342566562@newsletter",
+          newsletterJid: "12036342034566562@newsletter",
         },
       },
     }, { quoted: m });
@@ -25,7 +25,7 @@ const sessionGen = async (m, sock) => {
   }
 
   try {
-    const response = await axios.get(`https://popkidglesession.onrender.com/pair?number=${encodeURIComponent(text)}`);
+    const response = await axios.get(`https://hunchosession.onrender.com/pair?number=${encodeURIComponent(text)}`);
     const { code } = response.data;
 
     if (!code) throw new Error("No code returned");
@@ -38,7 +38,7 @@ const sessionGen = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "hunchomd",
-          newsletterJid: "120363420342566562@newsletter",
+          newsletterJid: "12036342034566562@newsletter",
         },
       },
     }, { quoted: m });
