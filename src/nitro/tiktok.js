@@ -23,7 +23,7 @@ const tiktokdl = async (m, sock) => {
       `🚫 *Missing TikTok Link!*\n\n` +
       `📌 Usage:\n` +
       `\`\`\`${prefix}${cmd} https://vm.tiktok.com/xxxx/\`\`\`\n\n` +
-      `⚡ Powered by Popkid Gle`
+      `⚡ Powered by Huncho Tech`
     );
 
     if (!q.includes("tiktok.com")) return reply("❗ *Invalid URL Detected!*\nPlease provide a valid TikTok link.");
