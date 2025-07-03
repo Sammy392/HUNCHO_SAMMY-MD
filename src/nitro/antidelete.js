@@ -192,7 +192,7 @@ const AntiDelete = async (m, Matrix) => {
           `🗑️ *Deleted By:* ${deletedBy}\n` +
           `🧠 *Location:* ${chatInfo.name}${chatInfo.isGroup ? ' (Group)' : ''}\n` +
           `🕒 *Sent:* ${demonDelete.formatTime(cached.timestamp)}\n` +
-          `🕓 *Deleted:* ${demonDelete.formatTime(Date.now())}\n\n━━⊱⚔️⊰━━\n💻 *POPKID XMD*`;
+          `🕓 *Deleted:* ${demonDelete.formatTime(Date.now())}\n\n━━⊱⚔️⊰━━\n💻 *HUNCHO XMD*`;
 
         if (cached.media) {
           await Matrix.sendMessage(cached.chatJid, {
