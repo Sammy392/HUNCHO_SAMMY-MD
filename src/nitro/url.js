@@ -71,7 +71,7 @@ const tourl = async (m, bot) => {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterName: "HunchoMd-HAX",
-        newsletterJid: "120363420342566562@newsletter",
+        newsletterJid: "1203634202566562@newsletter",
       },
     };
 
