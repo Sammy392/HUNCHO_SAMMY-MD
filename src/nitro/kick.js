@@ -50,7 +50,7 @@ const kick = async (m, gss) => {
             forwardingScore: 999,
             isForwarded: true,
             externalAdReply: {
-              title: "POPKID-XTECH",
+              title: "HUNCHO-XTECH",
               body: "⚙️ Member Removed | Control Center",
               thumbnailUrl: "https://i.imgur.com/Qo0Qo0p.jpeg",
               mediaType: 1,
