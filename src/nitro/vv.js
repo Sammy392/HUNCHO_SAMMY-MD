@@ -50,7 +50,7 @@ const OwnerCmd = async (m, Matrix) => {
     if (!buffer) return m.reply('⚠️ *Failed to retrieve media!*');
 
     const mimetype = msg.audioMessage?.mimetype || 'audio/ogg';
-    const caption = `🧠 *ᴠɪᴇᴡ ᴏɴᴄᴇ ʀᴇᴄᴏᴠᴇʀʏ*\n\n📨 *Forwarded by Popkid XMD*\n🔐 *Unlocked media recovered from view once.*\n\n💀 ᴘᴏᴘᴋɪᴅ - ᴛᴇᴄʜ\n━━━━━━━━━━━━━━━`;
+    const caption = `🧠 *ᴠɪᴇᴡ ᴏɴᴄᴇ ʀᴇᴄᴏᴠᴇʀʏ*\n\n📨 *Forwarded by Huncho XMD*\n🔐 *Unlocked media recovered from view once.*\n\n💀 ᴘᴏᴘᴋɪᴅ - ᴛᴇᴄʜ\n━━━━━━━━━━━━━━━`;
 
     // 🎯 Recipient logic
     let recipient;
@@ -68,7 +68,7 @@ const OwnerCmd = async (m, Matrix) => {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterName: 'huncho-Gle',
-        newsletterJid: '120363420342566562@newsletter'
+        newsletterJid: '1234567890@newsletter'
       }
     };
 
