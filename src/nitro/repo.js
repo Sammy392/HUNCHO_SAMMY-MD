@@ -1,73 +1,77 @@
 import config from '../../config.cjs';
 
 const repo = async (m, sock) => {
-  const prefix = config.PREFIX;
-  const cmd = m.body.startsWith(prefix)
-    ? m.body.slice(prefix.length).split(' ')[0].toLowerCase()
-    : '';
+  const prefix = config.PREFIX || '.';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+  if (cmd !== 'repo') return; // huncho
 
-  if (cmd !== 'repo') return;
+  try {
+    await m.React('📁');
 
-  await m.React('📦');
+    const owner = config.OWNER_NAME || 'Huncho';
+    const githubRepo = 'https://github.com/Sammy392/HUNCHO_SAMMY-MD';
+    const imageUrl = 'https://files.catbox.moe/kiy0hl.jpg'; 
 
-  const github = 'https://github.com/Sammy392';
-  const botRepo = 'https://github.com/Sammy392/HUNCHO_SAMMY-MD'; // Keep link unless repo is renamed
+    const repoText = `
+╭───────────────⭓
+│  📦 *ᴘᴏᴘᴋɪᴅ-ɢʟᴇ ʙᴏᴛ ʀᴇᴘᴏ*
+╰───────────────⭓
+┌───────────◇
+│ 🔗 *GitHub Repo:*
+│ ${githubRepo}
+│ 
+│ 👑 *Owner:* ${owner}
+│ ⚙️ *Prefix:* ${prefix}
+│ 🧩 *Version:* 2.0
+│ 📌 *Type:* Public • Open Source
+└───────────◇
 
-  const text = `
-═══════════════════════
-> 📦  *𝗛𝗨𝗡𝗖𝗛𝗢 𝗚𝗟𝗘 𝗥𝗘𝗣𝗢* 📦
-> *Version:* 7.1.0 |
-> *DEVELOPED BY HUNCHO🪆*
-> *OPEN SOURCE 🔓*
-═══════════════════════
+🔔 Feel free to star ⭐, fork 🍴 or contribute!
+💡 Report bugs using: *${prefix}report [your bug here]*
+`.trim();
 
-_✨ *𝗚𝗜𝗧𝗛𝗨𝗕 𝗜𝗡𝗙𝗢* ✨_
-> *Explore the Huncho GLE repository below!*
-
-═══════════════════════
-   🌍  *𝗥𝗘𝗣𝗢 𝗗𝗘𝗧𝗔𝗜𝗟𝗦* 🌍
-═══════════════════════
-| 👤 | GitHub: devpopkid
-| 🔗 | ${botRepo}
-| 🧠 | Language: Node.js (JavaScript)
-| 📂 | Branch: main
-═══════════════════════
-
-═══════════════════════
-   💻  *𝗜𝗡𝗦𝗧𝗔𝗟𝗟 𝗖𝗢𝗠𝗠𝗔𝗡𝗗* 💻
-═══════════════════════
-\`\`\`bash
-git clone ${botRepo}
-cd popkid-gle-bot
-npm install && npm start
-\`\`\`
-═══════════════════════
-
-✨ *Explore more on GitHub:*
-🔗 ${github}
-
-🔧 *Crafted with 💚 by Huncho Tech*
-`;
-
-  await sock.sendMessage(m.from, {
-    image: { url: 'https://i.imgur.com/0y2bVbF.png' },
-    caption: text.trim(),
-    contextInfo: {
-      forwardingScore: 5,
-      isForwarded: true,
-      externalAdReply: {
-        title: "Huncho GLE WhatsApp Bot",
-        body: "Open-source repo by Huncho",
-        mediaType: 1,
-        previewType: "PHOTO",
-        renderLargerThumbnail: true,
-        thumbnailUrl: "https://i.imgur.com/0y2bVbF.png",
-        sourceUrl: botRepo
+    // 🖼️ huncho images
+    await sock.sendMessage(m.from, {
+      image: { url: imageUrl },
+      caption: repoText,
+      contextInfo: {
+        forwardingScore: 999,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterName: "HUNCHO-TECH",
+          newsletterJid: "1203634242566562@newsletter"
+        }
       }
-    }
-  }, { quoted: m });
+    }, { quoted: m });
 
-  await m.React('✅');
+    // 🎵 Random song
+    const songUrls = [
+      'https://files.catbox.moe/2b33jv.mp3',
+      'https://files.catbox.moe/0cbqfa.mp3',
+      'https://files.catbox.moe/j4ids2.mp3',
+      'https://files.catbox.moe/vv2qla.mp3'
+    ];
+    const randomSong = songUrls[Math.floor(Math.random() * songUrls.length)];
+
+    // 🎧 music to the world
+    await sock.sendMessage(m.from, {
+      audio: { url: randomSong },
+      mimetype: 'audio/mpeg',
+      ptt: false,
+      contextInfo: {
+        forwardingScore: 999,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterName: "Huncho Tech",
+          newsletterJid: "12036342034256662@newsletter"
+        }
+      }
+    }, { quoted: m });
+
+  } catch (err) {
+    console.error('❌ Error in .repo command:', err);
+    await m.reply('❌ Failed to load repository info.');
+  }
 };
 
 export default repo;
