@@ -2,31 +2,49 @@ import config from '../../config.cjs';
 
 const autoreadCommand = async (m, Matrix) => {
   const botNumber = await Matrix.decodeJid(Matrix.user.id);
-  const isCreator = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(m.sender);
+  const isOwner = [botNumber, `${config.OWNER_NUMBER}@s.whatsapp.net`].includes(m.sender);
   const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  if (cmd === 'autoreact') {
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
-    let responseMessage;
+  const command = m.body.startsWith(prefix) 
+    ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() 
+    : '';
 
-    if (text === 'on') {
+  const args = m.body.slice(prefix.length + command.length).trim();
+
+  if (command !== 'autoreact') return;
+
+  if (!isOwner) {
+    return m.reply('📛 *THIS IS AN OWNER-ONLY COMMAND*');
+  }
+
+  let message;
+
+  switch (args) {
+    case 'on':
       config.AUTO_REACT = true;
-      responseMessage = "AUTO_REACT has been enabled.";
-    } else if (text === 'off') {
+      message = '✅ *Auto-react has been enabled.*';
+      break;
+    case 'off':
       config.AUTO_REACT = false;
-      responseMessage = "AUTO_REACT has been disabled.";
-    } else {
-      responseMessage = "Usage:\n- `autoreact on`: Enable Auto-React\n- `autoreact off`: Disable Auto-React";
-    }
+      message = '🛑 *Auto-react has been disabled.*';
+      break;
+    default:
+      message = `
+⚙️ *Auto-React Command Usage*
 
-    try {
-      await Matrix.sendMessage(m.from, { text: responseMessage }, { quoted: m });
-    } catch (error) {
-      console.error("Error processing your request:", error);
-      await Matrix.sendMessage(m.from, { text: 'Error processing your request.' }, { quoted: m });
-    }
+• \`autoreact on\` — Enable auto reaction
+• \`autoreact off\` — Disable auto reaction
+`.trim();
+      break;
+  }
+
+  try {
+    await Matrix.sendMessage(m.from, { text: message }, { quoted: m });
+  } catch (err) {
+    console.error('[AutoReact Error]', err.message);
+    await Matrix.sendMessage(m.from, {
+      text: '❌ *An error occurred while processing your request.*'
+    }, { quoted: m });
   }
 };
 
