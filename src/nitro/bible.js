@@ -59,7 +59,7 @@ const bible = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: 'huncho BIBLE 🔔',
-          newsletterJid: '120363290715861418@newsletter'
+          newsletterJid: '0029Vb61XuIKgsNt6yv9Sc2y@newsletter'
         }
       }
     }, { quoted: m });
@@ -73,7 +73,7 @@ const bible = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: 'huncho BIBLE 🔔',
-          newsletterJid: '120363290715861418@newsletter'
+          newsletterJid: '0029Vb61XuIKgsNt6yv9Sc2y@newsletter'
         }
       }
     }, { quoted: m });
@@ -95,7 +95,7 @@ const bible = async (m, sock) => {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterName: 'huncho BIBLE ❌',
-            newsletterJid: '120363420342566562@newsletter'
+            newsletterJid: '0029Vb61XuIKgsNt6yv9Sc2y@newsletter'
           }
         }
       }, { quoted: m });
@@ -127,7 +127,7 @@ const bible = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: 'huncho BIBLE 📖',
-          newsletterJid: '120363420342566562@newsletter'
+          newsletterJid: '0029Vb61XuIKgsNt6yv9Sc2y@newsletter'
         }
       }
     }, { quoted: m });
@@ -142,8 +142,8 @@ const bible = async (m, sock) => {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterName: 'POPKID BIBLE ⚠️',
-          newsletterJid: '120363290715861418@newsletter'
+          newsletterName: 'HUNCHO-TECH BIBLE ⚠️',
+          newsletterJid: '0029Vb61XuIKgsNt6yv9Sc2y@newsletter'
         }
       }
     }, { quoted: m });
