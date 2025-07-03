@@ -1,44 +1,58 @@
 import config from '../../config.cjs';
 
-const joinGroup = async (m, gss) => {
-  try {
-    const botNumber = await gss.decodeJid(gss.user.id);
-  const isCreator = [botNumber, config.OWNER_NUMBER + '@s.whatsapp.net'].includes(m.sender);
-    const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
-    const args = text.split(' ');
+const JoinCommand = async (m, Matrix) => {
+  const prefix = config.PREFIX;
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
+  const text = m.body.slice(prefix.length + cmd.length).trim();
+  let inviteText = text || m.quoted?.text;
 
-    const validCommands = ['join'];
+  if (cmd === 'join') {
+    const newsletter = {
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: '1203632901418@newsletter',
+        newsletterName: 'Huncho-Xmd',
+        serverMessageId: m.id
+      }
+    };
 
-    if (!validCommands.includes(cmd)) return;
-    
-    
+    if (!inviteText) {
+      return m.reply(
+        `🧷 *Join Command Help*\n\n` +
+        `❗ *No link provided!*\n` +
+        `📎 Please provide or reply to a *valid* WhatsApp group invite link.\n\n` +
+        `💡 *Example:*\n\`\`\`${prefix}join https://chat.whatsapp.com/XXXXXXYYYYYZZZZZZ\`\`\``,
+        newsletter
+      );
+    }
 
-    if (!isCreator) return m.reply("*📛 THIS IS AN OWNER COMMAND*");
+    const match = inviteText.match(/chat\.whatsapp\.com\/([0-9A-Za-z]{20,24})/);
+    if (!match) {
+      return m.reply(
+        `❌ *Invalid link format!*\n🔗 Please make sure the link looks like:\n` +
+        `\`\`\`https://chat.whatsapp.com/XXXXXXYYYYYZZZZZZ\`\`\``,
+        newsletter
+      );
+    }
 
-    if (!text) throw '*Enter The Group Link!*';
-    if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw '*INVALID LINK!*';
+    const groupCode = match[1];
 
-    m.reply('Please wait...');
-    const result = args[0].split('https://chat.whatsapp.com/')[1];
-
-    await gss.groupAcceptInvite(result)
-      .then((res) => m.reply(`*📛 SUCCESSFULLY JOINED THE GROUP. ${JSON.stringify(res)}`))
-      .catch((err) => m.reply(`*🚫 FAILED TO JOIN THE GROUP. ${JSON.stringify(err)}`));
-  } catch (error) {
-    console.error('Error:', error);
-    m.reply('An error occurred while processing the command.');
+    try {
+      await Matrix.groupAcceptInvite(groupCode);
+      return m.reply(
+        `✅ *Successfully joined the group!*\n\n` +
+        `📍 *Invite Code:* \`${groupCode}\`\n` +
+        `🔔 Huncho-Xmd is now active in the group.`,
+        newsletter
+      );
+    } catch (err) {
+      return m.reply(
+        `🚫 *Failed to join group!*\n\n` +
+        `📄 *Error message:*\n\`\`\`${err.message || err}\`\`\`\n` +
+        `📌 Ensure the link is valid and the group hasn't expired.`,
+        newsletter
+      );
+    }
   }
 };
 
-const isUrl = (string) => {
-  try {
-    new URL(string);
-    return true;
-  } catch (_) {
-    return false;
-  }
-};
-
-export default joinGroup;
+export default JoinCommand;
