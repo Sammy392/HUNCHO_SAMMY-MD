@@ -25,10 +25,14 @@ const menu = async (m, sock) => {
 ║ 💡 *Version:* 7.1.0
 ║ 🧠 *Developer:* Huncho🪆
 ║ ⚡ *Speed:* Ultra Fast 
+║ 🟦 *Platform:* Heroku 
+║ 🗿 *Prefix :* [.]
+║ ⚡ *Commands:* 207
 ╚═══════════════✦
 
 ✨ *𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗠𝗘𝗡𝗨* ✨
 > Maximize your experience by using the commands below.
+> 7th June 2023,WHU made history.
 
  *SYSTEM MENU* 🤪
 ⬛ ${prefix}menu | 📜
