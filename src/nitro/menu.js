@@ -34,62 +34,68 @@ const menu = async (m, sock) => {
 > Maximize your experience by using the commands below.
 > 7th June 2023,WHU made history.
 
- *SYSTEM MENU* 🤪
-⬛ ${prefix}menu | 📜
-⬛ ${prefix}alive | ✅
-⬛ ${prefix}owner | 👑
+  ║ *SYSTEM MENU* 🤪 ║║
+  ╚════════════════╝
+⬛ ${prefix}menu 
+⬛ ${prefix}alive 
+⬛ ${prefix}owner 
 ⬛ ${prefix}repo 
 ⬛ ${prefix}git 
 
- *OWNER COMMANDS* ❣️
-🟩 ${prefix}join | 🔗
-🟩 ${prefix}leave | 🚪
-🟩 ${prefix}autobio | 🩷
-🟩 ${prefix}block | 🔒
-🟩 ${prefix}unblock | 🔓
-🟩 ${prefix}autolikestatus | 🧋
-🟩 ${prefix}setppbot | 🤖
-🟩 ${prefix}anticall | 🚫
-🟩 ${prefix}setstatus | 🛑
-🟩 ${prefix}setnamebot | 📝
-🟩 ${prefix}pair |🥳
-🟩 ${prefix}link |😫
-🟩 ${prefix}mode |🙂
+ ║ *OWNER COMMANDS* ❣️║║
+ ╚═════════════════╝
+🟩 ${prefix}join 
+🟩 ${prefix}leave 
+🟩 ${prefix}autobio 
+🟩 ${prefix}block 
+🟩 ${prefix}unblock 
+🟩 ${prefix}autolikestatus 
+🟩 ${prefix}setppbot 
+🟩 ${prefix}anticall 
+🟩 ${prefix}setstatus 
+🟩 ${prefix}setnamebot 
+🟩 ${prefix}pair 
+🟩 ${prefix}link 
+🟩 ${prefix}mode 
 🟩 ${prefix}alwaysonline 
 🟩 ${prefix}autorecording 
 🟩 ${prefix}autotyping 
 🟩 ${prefix}autoreact 
 
- *GPT / AI FEATURES* 💎
-⬜ ${prefix}ai | 🤖
-⬜ ${prefix}gpt | 🧠
-⬜ ${prefix}dalle | 🎨
-⬜ ${prefix}bug | 🐞
-⬜ ${prefix}report | 📢
-⬜ ${prefix}chatbot | 🗣️
+ ║*GPT / AI FEATURES* 💎║║
+ ╚═══════════════════╝
+⬜ ${prefix}ai 
+⬜ ${prefix}gpt 
+⬜ ${prefix}dalle 
+⬜ ${prefix}bug 
+⬜ ${prefix}report 
+⬜ ${prefix}chatbot 
 
- *CONVERTER TOOLS* ⚠️
-🟥 ${prefix}attp | 🔤
-🟥 ${prefix}gimage | 🖼️
-🟥 ${prefix}play | 🎧
-🟥 ${prefix}video | 📹
-🟥 ${prefix}url  |🚸
-🟥 ${prefix}ytmp3 |🛄
-🟥 ${prefix}apk |🚳
-🟥 ${prefix}sticker |🔱
+ ║ *CONVERTER TOOLS* ⚠️  ║║
+ ╚════════════════════╝
+🟥 ${prefix}attp 
+🟥 ${prefix}gimage 
+🟥 ${prefix}play 
+🟥 ${prefix}video 
+🟥 ${prefix}url  
+🟥 ${prefix}ytmp3 
+🟥 ${prefix}apk 
+🟥 ${prefix}sticker 
 
- *SEARCH UTILITIES* 🤩
-🟩 ${prefix}google | 🌐
-🟩 ${prefix}mediafire | 📦
-🟩 ${prefix}facebook | 📘
-🟩 ${prefix}instagram | 📸
-🟩 ${prefix}tiktok | 🎵
-🟩 ${prefix}lyrics | 🎶
-🟩 ${prefix}imdb | 🎬
+ ║ *SEARCH UTILITIES* 🤩║║
+ ╚═══════════════════╝
+🟩 ${prefix}google 
+🟩 ${prefix}mediafire 
+🟩 ${prefix}facebook 
+🟩 ${prefix}instagram 
+🟩 ${prefix}tiktok 
+🟩 ${prefix}lyrics 
+🟩 ${prefix}imdb 
 
- *FUN ZONE* 🏴
-🟦 ${prefix}getpp | 🖼️
-🟦 ${prefix}url | 🔗
+ ║ *FUN ZONE* 🏴          ║║
+ ╚═════════════════════╝
+🟦 ${prefix}getpp 
+🟦 ${prefix}url 
 🟦 ${prefix}fancy
 🟦 ${prefix}randompic 
 🟦 ${prefix}riddle
@@ -100,7 +106,8 @@ const menu = async (m, sock) => {
 🟦 ${prefix}dare 
 🟦 ${prefix}facts
  
- *GROUP MENU* 🗿
+ ║ *GROUP MENU* 🗿         ║║
+ ╚══════════════════════╝
  🟨 ${prefix}invite
  🟨 ${prefix}add
  🟨 ${prefix}remove
@@ -120,7 +127,8 @@ const menu = async (m, sock) => {
  🟨 ${prefix}setgpp 
  🟨 ${prefix}online 
 
- *CONVERSATION MENU* 🎮
+ ║ *CONVERSATION MENU* 🎮 ║║
+ ╚═════════════════════╝
  🟩 ${prefix}vv 
  🟩 ${prefix}sticker 
  🟩 ${prefix}save 
