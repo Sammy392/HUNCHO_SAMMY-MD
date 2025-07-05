@@ -31,11 +31,11 @@ const menu = async (m, sock) => {
 > Maximize your experience by using the commands below.
 
  *SYSTEM MENU* 🤪
-🟢 ${prefix}menu | 📜
-🟢 ${prefix}alive | ✅
-🟢 ${prefix}owner | 👑
-🟢 ${prefix}repo 
-🟢 ${prefix}git 
+⬛ ${prefix}menu | 📜
+⬛ ${prefix}alive | ✅
+⬛ ${prefix}owner | 👑
+⬛ ${prefix}repo 
+⬛ ${prefix}git 
 
  *OWNER COMMANDS* ❣️
 🟩 ${prefix}join | 🔗
@@ -57,82 +57,82 @@ const menu = async (m, sock) => {
 🟩 ${prefix}autoreact 
 
  *GPT / AI FEATURES* 💎
-💎 ${prefix}ai | 🤖
-💎 ${prefix}gpt | 🧠
-💎 ${prefix}dalle | 🎨
-💎 ${prefix}bug | 🐞
-💎 ${prefix}report | 📢
-💎 ${prefix}chatbot | 🗣️
+⬜ ${prefix}ai | 🤖
+⬜ ${prefix}gpt | 🧠
+⬜ ${prefix}dalle | 🎨
+⬜ ${prefix}bug | 🐞
+⬜ ${prefix}report | 📢
+⬜ ${prefix}chatbot | 🗣️
 
  *CONVERTER TOOLS* ⚠️
-🤭 ${prefix}attp | 🔤
-🤭 ${prefix}gimage | 🖼️
-🤭 ${prefix}play | 🎧
-🤭 ${prefix}video | 📹
-🤭 ${prefix}url  |🚸
-🤭 ${prefix}ytmp3 |🛄
-🤭 ${prefix}apk |🚳
-🤭 ${prefix}sticker |🔱
+🟥 ${prefix}attp | 🔤
+🟥 ${prefix}gimage | 🖼️
+🟥 ${prefix}play | 🎧
+🟥 ${prefix}video | 📹
+🟥 ${prefix}url  |🚸
+🟥 ${prefix}ytmp3 |🛄
+🟥 ${prefix}apk |🚳
+🟥 ${prefix}sticker |🔱
 
  *SEARCH UTILITIES* 🤩
-🧐 ${prefix}google | 🌐
-🧐 ${prefix}mediafire | 📦
-🧐 ${prefix}facebook | 📘
-🧐 ${prefix}instagram | 📸
-🧐 ${prefix}tiktok | 🎵
-🧐 ${prefix}lyrics | 🎶
-🧐 ${prefix}imdb | 🎬
+🟩 ${prefix}google | 🌐
+🟩 ${prefix}mediafire | 📦
+🟩 ${prefix}facebook | 📘
+🟩 ${prefix}instagram | 📸
+🟩 ${prefix}tiktok | 🎵
+🟩 ${prefix}lyrics | 🎶
+🟩 ${prefix}imdb | 🎬
 
  *FUN ZONE* 🏴
-👉 ${prefix}getpp | 🖼️
-👉 ${prefix}url | 🔗
-👉 ${prefix}fancy
-👉 ${prefix}randompic 
-👉 ${prefix}riddle
-👉 ${prefix}question
-👉 ${prefix}hack
-👉 ${prefix}quotes
-👉 ${prefix}truth
-👉 ${prefix}dare 
-👉 ${prefix}facts
-
+🟦 ${prefix}getpp | 🖼️
+🟦 ${prefix}url | 🔗
+🟦 ${prefix}fancy
+🟦 ${prefix}randompic 
+🟦 ${prefix}riddle
+🟦 ${prefix}question
+🟦 ${prefix}hack
+🟦 ${prefix}quotes
+🟦 ${prefix}truth
+🟦 ${prefix}dare 
+🟦 ${prefix}facts
+ 
  *GROUP MENU* 🗿
- ⚡ ${prefix}invite
- ⚡ ${prefix}add
- ⚡ ${prefix}remove
- ⚡ ${prefix}tagall 
- ⚡ ${prefix}hidetag 
- ⚡ ${prefix}promote 
- ⚡ ${prefix}kickall 
- ⚡ ${prefix}demote
- ⚡ ${prefix}opengroup
- ⚡ ${prefix}close group 
- ⚡ ${prefix}ginfo
- ⚡ ${prefix}tagadmin 
- ⚡ ${prefix}resetlink 
- ⚡ ${prefix}poll 
- ⚡ ${prefix}countries
- ⚡ ${prefix}vcf 
- ⚡ ${prefix}setgpp 
- ⚡ ${prefix}online 
+ 🟨 ${prefix}invite
+ 🟨 ${prefix}add
+ 🟨 ${prefix}remove
+ 🟨 ${prefix}tagall 
+ 🟨 ${prefix}hidetag 
+ 🟨 ${prefix}promote 
+ 🟨 ${prefix}kickall 
+ 🟨 ${prefix}demote
+ 🟨 ${prefix}opengroup
+ 🟨 ${prefix}close group 
+ 🟨 ${prefix}ginfo
+ 🟨 ${prefix}tagadmin 
+ 🟨 ${prefix}resetlink 
+ 🟨 ${prefix}poll 
+ 🟨 ${prefix}countries
+ 🟨 ${prefix}vcf 
+ 🟨 ${prefix}setgpp 
+ 🟨 ${prefix}online 
 
  *CONVERSATION MENU* 🎮
- ❣️ ${prefix}vv 
- ❣️ ${prefix}sticker 
- ❣️ ${prefix}save 
- ❣️ ${prefix}ping 
- ❣️ ${prefix}slow 
- ❣️ ${prefix}tovideo 
- ❣️ ${prefix}toimage 
- ❣️ ${prefix}sent
- ❣️ ${prefix}4d
- ❣️ ${prefix}3d 
- ❣️ ${prefix}hacker 
- ❣️ ${prefix}huncho
-∆∆∆────────────── ∆∆∆
+ 🟩 ${prefix}vv 
+ 🟩 ${prefix}sticker 
+ 🟩 ${prefix}save 
+ 🟩 ${prefix}ping 
+ 🟩 ${prefix}slow 
+ 🟩 ${prefix}tovideo 
+ 🟩 ${prefix}toimage 
+ 🟩 ${prefix}sent
+ 🟩 ${prefix}4d
+ 🟩 ${prefix}3d 
+ 🟩 ${prefix}hacker 
+ 🟩 ${prefix}huncho
+||────────────── ||
 🤍 *Enjoy & Explore!*   🤍
 📌 _Bot by Huncho_
-∆∆∆──────────────∆∆∆`;
+||────────────── ||`;
 
     await sock.sendMessage(m.from, {
       image: { url: profilePictureUrl },
