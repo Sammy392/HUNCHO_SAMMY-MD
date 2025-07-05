@@ -23,7 +23,7 @@
     "AUTO_STATUS_SEEN": {
       "description": "Enter true for autoview status. Or leave blank",
       "required": false,
-      "value": ""
+      "value": "true"
     },
     "AUTO_READ": {
       "description": "Enter true for autoread messages. Or leave blank",
