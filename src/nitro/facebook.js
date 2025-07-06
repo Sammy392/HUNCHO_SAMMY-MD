@@ -80,7 +80,7 @@ ${qualityList.map((q, i) => `┃ ${i + 1}. ${q.resolution} Quality`).join('\n')}
           await Matrix.sendMessage(m.from, {
             video: buffer,
             mimetype: 'video/mp4',
-            caption: `✅ *Download Complete: ${selected.resolution}*\n\n🎥 *POPKID-MD BOT*`
+            caption: `✅ *Download Complete: ${selected.resolution}*\n\n🎥 *HUNCHO-MD BOT*`
           }, { quoted: m });
         }
 
