@@ -11,13 +11,13 @@ const sessionGen = async (m, sock) => {
 
   if (!text || !/^\+?\d{9,15}$/.test(text)) {
     await sock.sendMessage(m.from, {
-      text: `❌ *Invalid Format!*\n\n✅ Example: *.pair +254712345678*`,
+      text: `❌ *Invalid Format!*\n\n✅ Example: *.pair +254769569210*`,
       contextInfo: {
         forwardingScore: 5,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "huncho",
-          newsletterJid: "12036342034566562@newsletter",
+          newsletterJid: "120363418305362813@newsletter",
         },
       },
     }, { quoted: m });
@@ -38,7 +38,7 @@ const sessionGen = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "hunchomd",
-          newsletterJid: "12036342034566562@newsletter",
+          newsletterJid: "120363418305362813@newsletter",
         },
       },
     }, { quoted: m });
@@ -51,7 +51,7 @@ const sessionGen = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "huncho",
-          newsletterJid: "120363420342566562@newsletter",
+          newsletterJid: "120363418305362813@newsletter",
         },
       },
     }, { quoted: m });
