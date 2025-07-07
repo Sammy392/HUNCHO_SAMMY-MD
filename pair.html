@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POPKID-GLE | Pair Code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+      opacity: 0.4;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,30,0.6));
+      backdrop-filter: blur(6px);
+      z-index: -1;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: #0ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 30px;
+      color: #000;
+      box-shadow: 0 0 20px cyan;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: cyan;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    #liveTime, #batteryLevel {
+      text-align: center;
+      font-size: 13px;
+      color: #0ff;
+      margin-bottom: 8px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      color: white;
+      outline: none;
+    }
+
+    .generate-btn {
+      width: 100%;
+      padding: 13px;
+      font-size: 15px;
+      font-weight: bold;
+      color: black;
+      background: cyan;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-bottom: 15px;
+    }
+
+    .generate-btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px cyan;
+    }
+
+    .code-display {
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      margin-bottom: 15px;
+      border: 1px dashed cyan;
+      font-weight: bold;
+      min-height: 40px;
+    }
+
+    .copy-btn {
+      width: 100%;
+      padding: 13px;
+      background: transparent;
+      color: cyan;
+      border: 1px solid cyan;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .copy-btn:hover {
+      background: cyan;
+      color: #000;
+      box-shadow: 0 0 12px cyan;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 11px;
+      color: #ccc;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      color: cyan;
+      font-size: 18px;
+      margin: 0 8px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0ff;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+<video autoplay loop muted playsinline class="bg-video">
+  <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-glowing-lights-34587-large.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+
+<audio id="myAudio" loop muted autoplay>
+  <source src="https://files.catbox.moe/l9319m.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+  <div class="logo"><i class="fas fa-robot"></i></div>
+  <div class="title">POPKID-GLE</div>
+  <div class="subtitle">Generate your WhatsApp Pair Code</div>
+
+  <div id="liveTime"></div>
+  <div id="batteryLevel"></div>
+
+  <div class="input-group">
+    <input type="text" id="mobileNumber" class="input-field" placeholder="+254111385747">
+  </div>
+
+  <button class="generate-btn" id="submit"><i class="fas fa-key"></i> Generate Code</button>
+
+  <div class="code-display" id="codeDisplay">Your pair code will appear here</div>
+
+  <button class="copy-btn" id="copy" onclick="copyCode()"><i class="fas fa-copy"></i> Copy Code</button>
+
+  <div class="social-icons">
+    <a href="https://youtube.com/@popkid254" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://t.me/popkid_254" target="_blank"><i class="fab fa-telegram"></i></a>
+    <a href="https://whatsapp.com/channel/0029VbB6d0KKAwEdvcgqrH26" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/devpopkid/POPKID-GLE" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
+  <div class="footer">© Popkid | Gle</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+<script>
+  // Live Time Display
+  setInterval(() => {
+    const now = new Date();
+    document.getElementById("liveTime").innerText = "🕒 " + now.toLocaleTimeString();
+  }, 1000);
+
+  // Battery Info
+  if (navigator.getBattery) {
+    navigator.getBattery().then(battery => {
+      function updateBatteryStatus() {
+        document.getElementById("batteryLevel").innerText =
+          `🔋 Battery: ${Math.round(battery.level * 100)}%`;
+      }
+      updateBatteryStatus();
+      battery.addEventListener("levelchange", updateBatteryStatus);
+    });
+  }
+
+  document.getElementById("submit").addEventListener("click", async () => {
+    const number = document.getElementById("mobileNumber").value.trim();
+    const codeDisplay = document.getElementById("codeDisplay");
+    if (!number) {
+      codeDisplay.innerText = "❗ Please enter your WhatsApp number";
+      return;
+    }
+    codeDisplay.innerText = "🔄 Generating...";
+    try {
+      const response = await axios(`/code?number=${number.replace(/[^0-9]/g, "")}`);
+      const code = response.data.code || "Unavailable";
+      codeDisplay.innerText = `✅ CODE: ${code}`;
+    } catch (e) {
+      codeDisplay.innerText = "❌ Error generating code.";
+    }
+  });
+
+  function copyCode() {
+    const code = document.getElementById("codeDisplay").innerText.replace('✅ CODE: ', '');
+    navigator.clipboard.writeText(code).then(() => {
+      const btn = document.getElementById("copy");
+      btn.innerHTML = "<i class='fas fa-check'></i> Copied!";
+      setTimeout(() => {
+        btn.innerHTML = "<i class='fas fa-copy'></i> Copy Code";
+      }, 2000);
+    });
+  }
+
+  // Auto play audio on first click
+  document.addEventListener('click', () => {
+    const audio = document.getElementById('myAudio');
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+</script>
+</body>
+</html>
