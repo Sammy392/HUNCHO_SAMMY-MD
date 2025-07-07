@@ -39,7 +39,7 @@ const repo = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "HUNCHO-TECH",
-          newsletterJid: "1203634242566562@newsletter"
+          newsletterJid: "120363418305362813@newsletter"
         }
       }
     }, { quoted: m });
@@ -63,7 +63,7 @@ const repo = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "Huncho Tech",
-          newsletterJid: "12036342034256662@newsletter"
+          newsletterJid: "120363418305362813@newsletter"
         }
       }
     }, { quoted: m });
