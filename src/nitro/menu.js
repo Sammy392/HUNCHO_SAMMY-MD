@@ -34,7 +34,7 @@ const menu = async (m, sock) => {
 > Maximize your experience by using the commands below.
 > 7th June 2023,WHU made history.
 
-  ║ *SYSTEM MENU* 🤪 ║║
+  ║ *SYSTEM MENU* 🤪 
   ╚════════════════╝
 ⬛ ${prefix}menu 
 ⬛ ${prefix}alive 
@@ -42,7 +42,7 @@ const menu = async (m, sock) => {
 ⬛ ${prefix}repo 
 ⬛ ${prefix}git 
 
- ║ *OWNER COMMANDS* ❣️║║
+ ║ *OWNER COMMANDS* 🤗
  ╚═════════════════╝
 🟩 ${prefix}join 
 🟩 ${prefix}leave 
@@ -62,7 +62,7 @@ const menu = async (m, sock) => {
 🟩 ${prefix}autotyping 
 🟩 ${prefix}autoreact 
 
- ║*GPT / AI FEATURES* 💎║║
+ ║*GPT / AI FEATURES* 💎
  ╚═══════════════════╝
 ⬜ ${prefix}ai 
 ⬜ ${prefix}gpt 
@@ -71,7 +71,7 @@ const menu = async (m, sock) => {
 ⬜ ${prefix}report 
 ⬜ ${prefix}chatbot 
 
- ║ *CONVERTER TOOLS* ⚠️  ║║
+ ║ *CONVERTER TOOLS* ⚠️  
  ╚════════════════════╝
 🟥 ${prefix}attp 
 🟥 ${prefix}gimage 
@@ -82,7 +82,7 @@ const menu = async (m, sock) => {
 🟥 ${prefix}apk 
 🟥 ${prefix}sticker 
 
- ║ *SEARCH UTILITIES* 🤩║║
+ ║ *SEARCH UTILITIES* 🤩
  ╚═══════════════════╝
 🟩 ${prefix}google 
 🟩 ${prefix}mediafire 
@@ -92,7 +92,7 @@ const menu = async (m, sock) => {
 🟩 ${prefix}lyrics 
 🟩 ${prefix}imdb 
 
- ║ *FUN ZONE* 🏴          ║║
+ ║ *FUN ZONE* 🏴          
  ╚═════════════════════╝
 🟦 ${prefix}getpp 
 🟦 ${prefix}url 
@@ -106,7 +106,7 @@ const menu = async (m, sock) => {
 🟦 ${prefix}dare 
 🟦 ${prefix}facts
  
- ║ *GROUP MENU* 🗿         ║║
+ ║ *GROUP MENU* 🗿         
  ╚══════════════════════╝
  🟨 ${prefix}invite
  🟨 ${prefix}add
@@ -127,7 +127,7 @@ const menu = async (m, sock) => {
  🟨 ${prefix}setgpp 
  🟨 ${prefix}online 
 
- ║ *CONVERSATION MENU* 🎮 ║║
+ ║ *CONVERSATION MENU* 🎮 
  ╚═════════════════════╝
  🟩 ${prefix}vv 
  🟩 ${prefix}sticker 
@@ -154,7 +154,7 @@ const menu = async (m, sock) => {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterName: "Huncho-Xmd",
-          newsletterJid: "0029Vb61XuIKgsNt6yv9Sc2y@newsletter",
+          newsletterJid: "120363418305362813@newsletter",
         },
       }
     }, { quoted: m });
