@@ -34,7 +34,7 @@ const update = async (m, sock) => {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterName: "huncho xmd",
-                newsletterJid: "120363420342566562@newsletter",
+                newsletterJid: "120363418305362813@newsletter",
             },
         }
     }, { quoted: m });
@@ -49,7 +49,7 @@ const update = async (m, sock) => {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterName: "huncho md",
-                        newsletterJid: "120363420342566562@newsletter",
+                        newsletterJid: "120363418305362813@newsletter",
                     },
                 }
             }, { quoted: m });
