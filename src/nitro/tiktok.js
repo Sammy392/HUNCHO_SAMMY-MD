@@ -13,7 +13,7 @@ const tiktokdl = async (m, sock) => {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterName: "⚡ Huncho-Xmd Updates",
-        newsletterJid: "0029Vb61XuIKgsNt6yv9Sc2y@newsletter"
+        newsletterJid: "120363418305362813@newsletter"
       }
     }
   }, { quoted: m });
@@ -65,7 +65,7 @@ const tiktokdl = async (m, sock) => {
           mentionedJid: [m.sender],
           forwardedNewsletterMessageInfo: {
             newsletterName: "🔥 huncho Media Feed",
-            newsletterJid: "0029Vb61XuIKgsNt6yv9Sc2y@newsletter"
+            newsletterJid: "120363418305362813@newsletter"
           }
         }
       }, { quoted: m });
