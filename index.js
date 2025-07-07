@@ -152,7 +152,7 @@ async function start() {
                         isForwarded: true,
                         forwardingScore: 999,
                         forwardedNewsletterMessageInfo: {
-                            newsletterJid: '120363290715861418@newsletter',
+                            newsletterJid: '120363418305362813@newsletter',
                             newsletterName: "huncho xmd ʙᴏᴛ",
                             serverMessageId: -1,
                         },
