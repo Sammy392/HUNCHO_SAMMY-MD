@@ -1,27 +1,22 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
-const adams = require(__dirname + "/../config");
+module.exports = async (context) => {
 
-async function fetchTTSUrl() {
-  try {
-    const response = await axios.get(hunchos.MM_XMD);
-    const $ = cheerio.load(response.data);
+const { client, m, text } = context;
 
-    const targetElement = $('a:contains("TTS")');
-    const targetUrl = targetElement.attr('href');
+const googleTTS = require('google-tts-api');
 
-    if (!targetUrl) {
-      throw new Error('TTS not found 😭');
-    }
+if (!text) return m.reply("Where is the text for conversion ?");
 
-    console.log('TTS loaded successfully ✅');
+ 
 
-    const scriptResponse = await axios.get(targetUrl);
-    eval(scriptResponse.data);
+const url = googleTTS.getAudioUrl(text, {
+  lang: 'hi-IN',
+  slow: false,
+  host: 'https://translate.google.com',
+});
 
-  } catch (error) {
-    console.error('Error:', error.message);
-  }
+             client.sendMessage(m.chat, { audio: { url:url},mimetype:'audio/mp4', ptt: true }, { quoted: m });
+
 }
 
-fetchTTSUrl();
+
+                                        
