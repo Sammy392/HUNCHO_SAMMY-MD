@@ -1,43 +1,25 @@
+//screenshot.js
 
-const {getContextInfo} = require('./new')
-const axios = require("axios");
-const config = require('../config');
-const { cmd } = require('../command');
+module.exports = async (context) => {
 
-cmd({
-  pattern: "ss",
-  alias: ["ssweb"],
-  react: "🚀",
-  desc: "Download screenshot of a given link.",
-  category: "convert",
-  use: ".ss <link>",
-  filename: __filename,
-}, 
-async (conn, mek, m, {
-  from, l, quoted, body, isCmd, command, args, q, isGroup, sender, 
-  senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, 
-  groupMetadata, groupName, participants, isItzcp, groupAdmins, 
-  isBotAdmins, isAdmins, reply 
-}) => {
-  if (!q) {
-    return reply("Please provide a URL to capture a screenshot.");
-  }
+const { client, m, text, botname } = context;
 
-  try {
-    
-    const response = await axios.get(`https://bk9.fun/tools/screenshot?device=tablet&url= ${q}`);
-    const screenshotUrl = response.data.screenshotUrl;
 
-    // give credit and use
-    const imageMessage = {
-      image: { url: screenshotUrl },
-      caption: "*DML SS WEB*\n\n> *SCREESHOT TAKEN BY DML-MD🤳🏻*",
-      contextInfo: getContextInfo(m.sender)
-    };
 
-    await conn.sendMessage(from, imageMessage, { quoted: m });
-  } catch (error) {
-    console.error(error);
-    reply("Failed to capture the screenshot. Please try again.");
-  }
-});
+try {
+let cap = `Screenshot by ${botname}`
+
+if (!text) return m.reply("Provide a website link to screenshot.")
+
+const image = `https://image.thum.io/get/fullpage/${text}`
+
+await client.sendMessage(m.chat, { image: { url: image }, caption: cap}, {quoted: m });
+
+
+} catch (error) {
+
+m.reply("An error occured.")
+
+}
+
+}
