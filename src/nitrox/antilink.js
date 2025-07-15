@@ -23,7 +23,7 @@ module.exports = async (context) => {
         const isBotAdmin = userAdmins.includes(Myself);
 
         if (value === 'on' && !isBotAdmin) {
-            return await m.reply('❌ Mbwa wewe, I need admin privileges to enable Antilink.');
+            return await m.reply('❌ I need admin privileges to enable Antilink.');
         }
 
         if (value === 'on' || value === 'off') {
