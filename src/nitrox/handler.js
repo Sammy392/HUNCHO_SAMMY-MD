@@ -9,7 +9,6 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Function to get group admins
 export const getGroupAdmins = (participants) => {
     let admins = [];
     for (let i of participants) {
@@ -23,11 +22,10 @@ export const getGroupAdmins = (participants) => {
 const Handler = async (chatUpdate, sock, logger) => {
     try {
         if (chatUpdate.type !== 'notify') return;
-
         const m = serialize(JSON.parse(JSON.stringify(chatUpdate.messages[0])), sock, logger);
         if (!m.message) return;
 
-        const participants = m.isGroup ? await sock.groupMetadata(m.from).then(metadata => metadata.participants) : [];
+        const participants = m.isGroup ? await sock.groupMetadata(m.from).then(meta => meta.participants) : [];
         const groupAdmins = m.isGroup ? getGroupAdmins(participants) : [];
         const botId = sock.user.id.split(':')[0] + '@s.whatsapp.net';
         const isBotAdmins = m.isGroup ? groupAdmins.includes(botId) : false;
@@ -46,45 +44,46 @@ const Handler = async (chatUpdate, sock, logger) => {
 
         const botNumber = await sock.decodeJid(sock.user.id);
         const ownerNumber = config.OWNER_NUMBER + '@s.whatsapp.net';
-        let isCreator = false;
+        const isCreator = m.sender === ownerNumber || m.sender === botNumber;
 
-        if (m.isGroup) {
-            isCreator = m.sender === ownerNumber || m.sender === botNumber;
-        } else {
-            isCreator = m.sender === ownerNumber || m.sender === botNumber;
-        }
+        // Only creator allowed if bot is not public
+        if (!sock.public && !isCreator) return;
 
-        if (!sock.public) {
-            if (!isCreator) {
-                return;
-            }
-        }
-
+        // 🔒 Handle Antilink Logic
         await handleAntilink(m, sock, logger, isBotAdmins, isAdmins, isCreator);
 
-        const { isGroup, type, sender, from, body } = m;
-        console.log(m);
+        const { from } = m;
 
+        // ✅ Built-in test command (Always works)
+        if (cmd === 'ping') {
+            await sock.sendMessage(from, { text: '✅ Bot is alive!' }, { quoted: m });
+            return;
+        }
+
+        // 🧠 Plugin loading from /nitro folder
         const pluginDir = path.join(__dirname, '..', 'nitro');
         const pluginFiles = await fs.readdir(pluginDir);
 
         for (const file of pluginFiles) {
             if (file.endsWith('.js')) {
                 const pluginPath = path.join(pluginDir, file);
-               // console.log(`Attempting to load plugin: ${pluginPath}`);
 
                 try {
                     const pluginModule = await import(`file://${pluginPath}`);
                     const loadPlugins = pluginModule.default;
-                    await loadPlugins(m, sock);
-                   // console.log(`Successfully loaded plugin: ${pluginPath}`);
+
+                    if (typeof loadPlugins === 'function') {
+                        await loadPlugins(m, sock);
+                    } else {
+                        console.warn(`Plugin ${file} does not export a default function`);
+                    }
                 } catch (err) {
-                    console.error(`Failed to load plugin: ${pluginPath}`, err);
+                    console.error(`❌ Error in plugin ${file}:`, err);
                 }
             }
         }
     } catch (e) {
-        console.log(e);
+        console.error('❌ Handler error:', e);
     }
 };
 
