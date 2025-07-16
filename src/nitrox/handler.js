@@ -1,4 +1,4 @@
-import { serialize, decodeJid } from '../../lib/Serializer.js';
+import { smsg } from '../../lib/myfunc.cjs';
 import path from 'path';
 import fs from 'fs/promises';
 import config from '../../config.cjs';
