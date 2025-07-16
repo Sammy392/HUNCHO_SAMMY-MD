@@ -2,7 +2,7 @@ import { serialize, decodeJid } from '../../lib/Serializer.js';
 import path from 'path';
 import fs from 'fs/promises';
 import config from '../../config.cjs';
-import { smsg } from '../../lib/myfunc.cjs';
+import { serialize } from '../../lib/Serializer.js';
 import { handleAntilink } from './antilink.js';
 import { fileURLToPath } from 'url';
 
