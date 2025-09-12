@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Pacifico&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=🚀+Welcome+To+Huncho+Tech;🤖+HUNCHO-XMD+-+Next+Gen+WhatsApp+Bot;✨+Created+by+Huncho+254769569210" alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Pacifico&size=28&duration=4000&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=🚀+Welcome+To+Huncho+Tech;🤖+HUNCHO-XMD+-+Next+Gen+WhatsApp+Bot;✨+Created+by+Huncho+254769569210" alt="Typing SVG" />
 </p>
 
 ---
@@ -13,9 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Dancing+Script&size=26&pause=1000&color=FF5F7E&center=true&vCenter=true&width=600&lines=💎+HUNCHO+MD+IS+100%25+SAFE+ON+HEROKU;⚡+Deploy+Now+%26+Enjoy+Limitless+Power" alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Dancing+Script&size=26&duration=3500&pause=800&color=FF5F7E&center=true&vCenter=true&width=600&lines=💎+HUNCHO+MD+IS+100%25+SAFE+ON+HEROKU;⚡+Deploy+Now+%26+Enjoy+Limitless+Power" alt="Typing SVG" />
 </p>
 
 ---
