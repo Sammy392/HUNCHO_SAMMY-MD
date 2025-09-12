@@ -33,7 +33,7 @@
 
 ### GET YOUR SESSION ID.🤪
 
-<a href="https://hunchosession.onrender.com/pair">
+<a href="https://huncho-xmd-scanner.onrender.com">
   <img title="GET SESSION ID" src="https://img.shields.io/badge/GET%20SESSION%20ID-pink?color=pink&style=for-the-badge&logo=porsche&logoColor=pink" width="240" height="38.45"/>
 </a>
 
