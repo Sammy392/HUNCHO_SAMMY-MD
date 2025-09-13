@@ -28,6 +28,6 @@ cmd({
     const end = Date.now();
 
     await conn.sendMessage(m.chat, { 
-        text: `⚡ ${toTinyCaps("Popkid xtr Speed")}: *${end - start}ms*`
+        text: `⚡ ${toTinyCaps("Huncho xtr Speed")}: *${end - start}ms*`
     }, { quoted: mek });
 });
