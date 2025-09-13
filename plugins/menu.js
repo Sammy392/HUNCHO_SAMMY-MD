@@ -45,7 +45,7 @@ cmd(
     alias: ["allmenu"],
     desc: "Show all bot commands",
     category: "menu",
-    react: "👌",
+    react: "🏁",
     filename: __filename
   },
 
@@ -58,7 +58,7 @@ cmd(
       // ── Header
       let caption = `
 ╭─────────────✦
-│   🚀 ${stylizeText("HUNCHO")}
+│   🚀 ${stylizeText("HUNCHO MD")}
 ╰─────────────✦
 
 👤 *User:* @${sender.split("@")[0]}
@@ -67,7 +67,7 @@ cmd(
 🔑 *Prefix:* ${config.PREFIX}
 👑 *Owner:* ${config.OWNER_NAME}
 📦 *Plugins:* ${commands.length}
-💻 *Developer:* ᴘᴏᴘᴋɪᴅ
+💻 *Developer:* HUNCHO*
 🆚 *Version:* 2.0.0
 ─────────────────────`;
 
@@ -84,10 +84,10 @@ cmd(
       Object.keys(grouped)
         .sort()
         .forEach((cat) => {
-          const icon = categoryIcons[cat] || "📂";
+          const icon = categoryIcons[cat] || "🟦";
           caption += `\n\n📂 [${icon} ${stylizeText(cat)} ${stylizeText("Menu")}]\n`;
           grouped[cat].sort().forEach((cmd) => {
-            caption += `  • ${prefix}${cmd}\n`;
+            caption += `  ⬜ ${prefix}${cmd}\n`;
           });
         });
 
