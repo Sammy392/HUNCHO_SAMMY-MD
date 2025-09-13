@@ -10,7 +10,7 @@ cmd({
 }, async (cmd, mek, m, { from, reply }) => {
   try {
     const ownerName = config.OWNER_NAME || "ᴘᴏᴘᴋɪᴅ";
-    const ownerNumber = config.OWNER_NUMBER || "254111385747";
+    const ownerNumber = config.OWNER_NUMBER || "254769569210";
 
     // Build vCard contact
     const vcard = [
@@ -31,9 +31,9 @@ cmd({
 
     // Send image + caption
     await cmd.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/tbdd5d.jpg' },
+      image: { url: 'https://files.catbox.moe/zixhf9.png' },
       caption: `
-╭── ❍ ᴘᴏᴘᴋɪᴅ xᴛʀ❍
+   HUNCHO MD xᴛʀ❍
 │ ✦ 𝙽𝚊𝚖𝚎   : *${ownerName}*
 │ ✦ 𝙽𝚞𝚖𝚋𝚎𝚛 : *${ownerNumber}*
 │ ✦ 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : *${config.version || 'Unknown'}*
@@ -44,7 +44,7 @@ cmd({
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363420342566562@newsletter',
+          newsletterJid: '120363418305362813@newsletter',
           newsletterName: 'ᴘᴏᴘᴋɪᴅ',
           serverMessageId: 143
         }
