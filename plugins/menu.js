@@ -24,9 +24,9 @@ const categoryIcons = {
   download: "⬇️", downloader: "📥", fun: "🎮", game: "🕹️",
   group: "👥", img_edit: "🖌️", info: "ℹ️", information: "🧠",
   logo: "🖼️", main: "🏠", media: "🎞️", menu: "📜", misc: "📦",
-  music: "🎵", other: "📁", owner: "👑", privacy: "🔒",
+  music: "🎵", other: "🤩", owner: "👑", privacy: "🔒",
   search: "🔎", settings: "⚙️", sticker: "🌟", tools: "🛠️",
-  user: "👤", utilities: "🧰", utility: "🧮", wallpapers: "🖼️",
+  user: "👤", utilities: "🧰", utility: "👋", wallpapers: "🖼️",
   whatsapp: "📱"
 };
 
@@ -67,7 +67,7 @@ cmd(
 🔑 *Prefix:* ${config.PREFIX}
 👑 *Owner:* ${config.OWNER_NAME}
 📦 *Plugins:* ${commands.length}
-💻 *Developer:* HUNCHO*
+💻 *Developer:* Huncho_thee 😔
 🆚 *Version:* 2.0.0
 ─────────────────────`;
 
@@ -85,7 +85,7 @@ cmd(
         .sort()
         .forEach((cat) => {
           const icon = categoryIcons[cat] || "🟦";
-          caption += `\n\n📂 [${icon} ${stylizeText(cat)} ${stylizeText("Menu")}]\n`;
+          caption += `\n\n👑 [${icon} ${stylizeText(cat)} ${stylizeText("Menu")}]\n`;
           grouped[cat].sort().forEach((cmd) => {
             caption += `  ⬜ ${prefix}${cmd}\n`;
           });
